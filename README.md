@@ -3,7 +3,7 @@ This is a hightlight colorizer for polscript, to be used in Visual Code.
 It's based on Groovy language, and itsn't done yet. But is better than nothing.
 Please, contribute if you can! Any help counts ! =] 
 
-\!\[feature X\]\(example.png\)
+![highlight example](example.png)
 
 ### Install the extention
 * To start using your extension with Visual Studio Code copy it into the <user home>/.vscode/extensions folder and restart Code.
