@@ -1,0 +1,26 @@
+{
+    "name": "polscript",
+    "displayName": "polscript",
+    "description": "colorizer for polscript language",
+    "version": "0.0.1",
+    "publisher": "vitorfdl",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "polscript",
+            "aliases": ["polscript", "polscript"],
+            "extensions": [".src",".inc",".em"],
+            "configuration": "./polscript.configuration.json"
+        }],
+        "grammars": [{
+            "language": "polscript",
+            "scopeName": "source.src",
+            "path": "./syntaxes/polscript.tmLanguage"
+        }]
+    }
+}
