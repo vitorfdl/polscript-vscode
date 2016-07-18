@@ -3,6 +3,8 @@ This is a hightlight colorizer for polscript, to be used in Visual Code.
 It's based on Groovy language, and itsn't done yet. But is better than nothing.
 Please, contribute if you can! Any help counts ! =] 
 
+\!\[feature X\]\(example.png\)
+
 ### Install the extention
 * To start using your extension with Visual Studio Code copy it into the <user home>/.vscode/extensions folder and restart Code.
 
@@ -20,7 +22,7 @@ comments and brackets.
 
 ### Known Issues
 * endprogram and endfunction are not colorized;
-* if a var is ahead of another var, it not receive any variable highlight property ;
+* if a var is ahead of a comment, it not receive any variable highlight property ;
 
 ### Add more language features
 * To add features such as intellisense, hovers and validators check out the VS Code extenders documentation at
