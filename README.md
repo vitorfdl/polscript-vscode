@@ -1,6 +1,6 @@
 # Polscript README
-This is a hightlight colorizer for polscript, to be used in Visual Code.
-It's based on Groovy language, and itsn't done yet. But is better than nothing.
+This is a hightlight colorizer for polscript, to be used in Visual Code.<br>
+It's based on PHP language, and itsn't done yet. But is better than nothing.<br>
 Please, contribute if you can! Any help counts ! =] 
 
 ![highlight example](example.png)
@@ -19,10 +19,6 @@ comments and brackets.
 ### Make changes
 * you can relaunch the extension from the debug toolbar after making changes to the files listed above
 * you can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes
-
-### Known Issues
-* endprogram and endfunction are not colorized;
-* if a var is ahead of a comment, it not receive any variable highlight property ;
 
 ### Add more language features
 * To add features such as intellisense, hovers and validators check out the VS Code extenders documentation at
