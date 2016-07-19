@@ -1500,7 +1500,33 @@
 					<key>match</key>
 					<string>((?:(?:^(.)*$[a-z]\w*\.)*[A-z]+\w*)(?=\())</string>
 					<key>name</key>
-					<string>variable.other.class.polscript</string>
+					<string>entity.name.type.namespace.polscript</string>
+				</dict>
+<!--
+					<key>begin</key>
+					<string>(?i)^\s*(namespace)\b\s+(?=([a-z0-9_\\]+\s*($|[;{]|(\/[\/*])))|$)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.namespace.polscript</string>
+						</dict>
+					</dict>
+					<key>contentName</key>
+					<string>entity.name.type.namespace.polscript</string>
+					<key>end</key>
+					<string>(?i)(?=\s*$|[^a-z0-9_\\])</string>
+					<key>name</key>
+					<string>meta.namespace.polscript</string>
+					<key>patterns</key>
+					<array>-->
+                <!--variable here-->
+				<dict>
+					<key>match</key>
+					<string>(\w[^\s,]*)\s+(?=\:=)|(?<=var\s)(\w+)</string>
+					<key>name</key>
+					<string>punctuation.definition.variable.polscript</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -3302,7 +3328,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(\$\{)(?=.*?\})</string>
+					<string>(\$\{)(?:=.*?\})</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>

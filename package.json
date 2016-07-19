@@ -2,8 +2,9 @@
     "name": "polscript",
     "displayName": "Polscript Language Support",
     "description": "polscript (ultima server) colorizer support for vscode",
-    "version": "0.0.1",
+    "version": "0.3.0",
     "publisher": "vitorfdl",
+    "icon": "favicon.ico",
     "engines": {
         "vscode": "^1.0.0"
     },
@@ -11,16 +12,27 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "polscript",
-            "aliases": ["polscript", "polscript"],
-            "extensions": [".src",".inc",".em"],
-            "configuration": "./polscript.configuration.json"
-        }],
-        "grammars": [{
-            "language": "polscript",
-            "scopeName": "source.src",
-            "path": "./syntaxes/polscript.tmLanguage"
-        }]
+        "languages": [
+            {
+                "id": "polscript",
+                "aliases": [
+                    "polscript",
+                    "polscript"
+                ],
+                "extensions": [
+                    ".src",
+                    ".inc",
+                    ".em"
+                ],
+                "configuration": "./polscript.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "polscript",
+                "scopeName": "source.src",
+                "path": "./syntaxes/polscript.tmLanguage"
+            }
+        ]
     }
 }
