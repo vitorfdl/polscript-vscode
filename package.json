@@ -1,7 +1,7 @@
 {
     "name": "polscript",
-    "displayName": "polscript",
-    "description": "colorizer for polscript language",
+    "displayName": "Polscript Language Support",
+    "description": "polscript (ultima server) colorizer support for vscode",
     "version": "0.0.1",
     "publisher": "vitorfdl",
     "engines": {
