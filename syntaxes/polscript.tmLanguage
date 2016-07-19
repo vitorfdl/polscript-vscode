@@ -4,7 +4,6 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<!-- .polscript files are actually opened with HTML.tmLanguage, this is just a bit of trickery to make it look like PHP.tmLanguage is used to open them -->
 		<string>src</string>
 		<string>inc</string>
 		<string>em</string>
@@ -3336,6 +3335,6 @@
 	<key>scopeName</key>
 	<string>source.src</string>
 	<key>uuid</key>
-	<string>22986475-8CA5-11D9-AEDD-000D93C8BE28</string>
+	<string>361eb862-f7c3-4c2f-8bfb-fc97f267eddf</string>
 </dict>
 </plist>

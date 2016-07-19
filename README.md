@@ -1,12 +1,17 @@
 # Polscript README
-This is a hightlight colorizer for polscript, to be used in Visual Code.<br>
-It's based on PHP language, and itsn't done yet. But is better than nothing.<br>
-Please, contribute if you can! Any help counts ! =] 
+This is a hightlight colorizer for polscript, to be used in Visual Code.<br> 
+It's based on PHP language, and itsn't done yet. But is better than nothing.
 
 ![highlight example](example.png)
 
 ### Install the extention
-* To start using your extension with Visual Studio Code copy it into the <user home>/.vscode/extensions folder and restart Code.
+* You can install by typing `ext install polscript` in vscode (easy way)
+
+## For Dev Contribution
+Please, contribute if you can! Any help counts ! =] 
+
+### Install the extention
+* You can clone this repository to your folder <user home>/.vscode/extensions and restart code.
 
 ### What's in the folder
 * This folder contains all of the files necessary for your extension
