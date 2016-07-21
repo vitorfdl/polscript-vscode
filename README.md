@@ -2,7 +2,7 @@
 This is a hightlight colorizer for polscript, to be used in Visual Code.<br> 
 It's based on PHP language, and itsn't done yet. But is better than nothing.
 
-![highlight example](example.png)
+![highlight example](https://github.com/vitorfdl/polscript-vscode/raw/master/example.png)
 
 ### Install the extention
 * You can install by typing `ext install polscript` in vscode (easy way)
