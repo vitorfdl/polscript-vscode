@@ -2592,11 +2592,12 @@
 					<key>name</key>
 					<string>support.function.classobj.polscript</string>
 				</dict>
+                <!--Functions Here POL-->
 				<dict>
 					<key>match</key>
 					<string>((?:(?:^(.)*$[a-z]\w*\.)*[A-z]+\w*)(?=\())</string>
 					<key>name</key>
-					<string>entity.name.type.namespace.polscript</string>
+					<string>entity.name.type.class.polscript</string>
 				</dict>
 				<dict>
 					<key>match</key>
