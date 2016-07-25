@@ -1088,9 +1088,15 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\s*\b(break|c(ase|ontinue)|d(e(clare|fault)|ie|o)|e(lse(if)?|nd(declare|for(each)?|if|switch|while)|xit)|for(each)?|if|return|switch|use|while)\b</string>
+					<string>\s*\b(break|c(ase|ontinue)|d(e(clare|fault)|ie|o)|e(lse(if)?|nd(declare|for(each)?|if|switch|while|case)|xit)|for(each)?|if|return|switch|use|while)\b</string>
 					<key>name</key>
 					<string>keyword.control.polscript</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b[A-Z]+(?:_[A-Z]+)+\b</string>
+					<key>name</key>
+					<string>invalid.illegal.missing-asterisk.polscriptdoc.polscript</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -1179,7 +1185,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>\{</string>
+					<string>endfunction</string>
 					<key>name</key>
 					<string>meta.function.closure.polscript</string>
 					<key>patterns</key>
@@ -1491,20 +1497,14 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?i)\b(array|real|double|float|int(eger)?|bool(ean)?|string|class|clone|endfunction|endprogram|var|function|parent|self|object)\b</string>
+					<string>(?i)\b(array|dictionary|real|double|float|int(eger)?|bool(ean)?|string|class|clone|var|parent|self|object|end(function|program))\b</string>
 					<key>name</key>
 					<string>storage.type.polscript</string>
 				</dict>
                 <!--function here-->
-				<dict>
-					<key>match</key>
-					<string>((?:(?:^(.)*$[a-z]\w*\.)*[A-z]+\w*)(?=\())</string>
-					<key>name</key>
-					<string>entity.name.type.namespace.polscript</string>
-				</dict>
 <!--
 					<key>begin</key>
-					<string>(?i)^\s*(namespace)\b\s+(?=([a-z0-9_\\]+\s*($|[;{]|(\/[\/*])))|$)</string>
+					<string>(\S+)\s*:=</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -2594,6 +2594,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>((?:(?:^(.)*$[a-z]\w*\.)*[A-z]+\w*)(?=\())</string>
+					<key>name</key>
+					<string>entity.name.type.namespace.polscript</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>(?i)\b(com_(set|create_guid|i(senum|nvoke)|pr(int_typeinfo|op(set|put|get))|event_sink|load(_typelib)?|addref|release|get(_active_object)?|message_pump)|variant_(s(ub|et(_type)?)|n(ot|eg)|c(a(st|t)|mp)|i(nt|div|mp)|or|d(iv|ate_(to_timestamp|from_timestamp))|pow|eqv|fix|a(nd|dd|bs)|round|get_type|xor|m(od|ul)))\b</string>
 					<key>name</key>
 					<string>support.function.com.polscript</string>
@@ -3328,7 +3334,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(\$\{)(?:=.*?\})</string>
+					<string>(\$\{)(?:\:=.*?\})</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
