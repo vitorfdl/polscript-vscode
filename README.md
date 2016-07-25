@@ -1,6 +1,8 @@
 # Polscript README
 This is a hightlight colorizer for polscript, to be used in Visual Code.<br> 
-It's based on PHP language, and itsn't done yet. But is better than nothing.
+It's based on PHP language, and itsn't done yet. But is better than nothing.<br>
+Please, be aware that this colorizer works better with some themes. In this screenshot, I've used the theme `Dark+ (default dark)`.
+Others that i've already tested was `Monokai Dark Soda` and `Darktooth`
 
 ![highlight example](https://github.com/vitorfdl/polscript-vscode/raw/master/example.png)
 
