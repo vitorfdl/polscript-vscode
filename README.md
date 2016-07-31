@@ -4,7 +4,7 @@ It's based on PHP language, and itsn't done yet. But is better than nothing.<br>
 Please, be aware that this colorizer works better with some themes. In this screenshot, I've used the theme `Dark+ (default dark)`.
 Others that i've already tested was `Monokai Dark Soda` and `Darktooth`
 
-![highlight example](https://github.com/vitorfdl/polscript-vscode/raw/master/example.png)
+![highlight example](https://github.com/vitorfdl/polscript-vscode/raw/master/example.png) ![highlight example](https://github.com/vitorfdl/polscript-vscode/raw/master/examplecfg.png)
 
 ### Install the extention
 * You can install by typing `ext install polscript` in vscode (easy way)

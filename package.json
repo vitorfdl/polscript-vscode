@@ -2,7 +2,7 @@
     "name": "polscript",
     "displayName": "Polscript Language Support",
     "description": "polscript (ultima server) colorizer support for vscode",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "publisher": "vitorfdl",
     "icon": "favicon.ico",
     "engines": {
@@ -16,7 +16,6 @@
             {
                 "id": "polscript",
                 "aliases": [
-                    "polscript",
                     "polscript"
                 ],
                 "extensions": [
@@ -25,6 +24,15 @@
                     ".em"
                 ],
                 "configuration": "./polscript.configuration.json"
+            }, {
+                "id": "cfgpol",
+                "aliases": [
+                    "cfgpol"
+                ],
+                "extensions": [
+                    ".cfg"
+                ],
+                "configuration": "./cfgpol.configuration.json"
             }
         ],
         "grammars": [
@@ -32,6 +40,10 @@
                 "language": "polscript",
                 "scopeName": "source.src",
                 "path": "./syntaxes/polscript.tmLanguage"
+            }, {
+                "language": "cfgpol",
+                "scopeName": "source.cfgpol",
+                "path": "./syntaxes/cfg.tmLanguage"
             }
         ]
     }
