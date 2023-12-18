@@ -1,96 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>fileTypes</key>
-	<array>
-		<string>cfg</string>
-	</array>
-	<key>name</key>
-	<string>CFG Penultima</string>
-	<key>patterns</key>
-	<array>
-		<dict>
-            <key>comment</key>
-            <string>It's a comment pattern for // and #</string>
-			<key>captures</key>
+	<dict>
+		<key>fileTypes</key>
+		<array>
+			<string>cfg</string>
+		</array>
+		<key>name</key>
+		<string>CFG Penultima</string>
+		<key>patterns</key>
+		<array>
 			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.cfgpol</string>
-				</dict>
+				<key>match</key>
+				<string>(\/\/|#).*?($\n?|(?=\?&gt;))</string>
+				<key>name</key>
+				<string>comment.line.double-slash.cfgpol</string>
 			</dict>
-			<key>match</key>
-			<string>(\/\/|#).*?($\n?|(?=\?&gt;))</string>
-			<key>name</key>
-            <string>comment.line.double-slash.polscript</string>
-
-		</dict>
-		<dict>
-            <key>comment</key>
-            <string>Get default .cfg like pol .cfg</string>
-			<key>match</key>
-			<string>.+(?=\=)</string>
-			<key>name</key>
-			<string>variable.parameter.cfgpol</string>
-		</dict>
-		<dict>
-            <key>comment</key>
-            <string>Colorize any integer number</string>
-			<key>match</key>
-			<string>\b(:?[1-9]+[0-9]*|0)\b</string>
-			<key>name</key>
-			<string>constant.numeric.integer.decimal.cfgpol</string>
-		</dict>
-		<dict>
-            <key>comment</key>
-            <string>Colorize any integer hexadecimal number</string>
-			<key>match</key>
-			<string>0[xX][0-9a-fA-F]+</string>
-			<key>name</key>
-			<string>constant.numeric.integer.decimal.cfgpol</string>
-		</dict>
-        <dict>
-            <key>comment</key>
-            <string>Colorize the document name before brakets {</string>
-			<key>match</key>
-			<string>^(?!\s|{|}).+</string>
-			<key>name</key>
-			<string>entity.name.function.cfgpol</string>
-		</dict>
-		<dict>
-            <key>comment</key>
-            <string>Colorize the first word inside brakets</string>
-			<key>match</key>
-			<string>(^\s*)([\w]+)([^\s]+)</string>
-			<key>name</key>
-			<string>variable.parameter.cfgpol</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(:?true|false)\b</string>
-			<key>name</key>
-			<string>constant.language.cfgpol</string>
-		</dict>
-        <dict>
-            <key>comment</key>
-            <string>Colorize every word</string>
-			<key>match</key>
-			<string>\b[^\d\W]+\b</string>
-			<key>name</key>
-			<string>string.quoted.other.cfgpol</string>
-		</dict>
-        <dict>
-            <key>comment</key>
-            <string>Get packages names, like :ghaia:text</string>
-			<key>match</key>
-			<string>:([^:]*):.*</string>
-			<key>name</key>
-			<string>storage.modifier.cfgpol</string>
-		</dict>
-	</array>
-	<key>scopeName</key>
-	<string>source.cfgpol</string>
-</dict>
+			<dict>
+				<key>match</key>
+				<string>^(?!\s|{|}).+</string>
+				<key>name</key>
+				<string>entity.name.namespace.cfgpol</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>Colorize any integer hexadecimal number</string>
+				<key>match</key>
+				<string>0[xX][0-9a-fA-F]+</string>
+				<key>name</key>
+				<string>constant.numeric.integer.hexadecimal.cfgpol</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>Colorize any numeric number and dice format</string>
+				<key>match</key>
+				<string>\b(\d+|(\d+)d(\d+))\b</string>
+				<key>name</key>
+				<string>constant.numeric.integer.decimal.cfgpol</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>\{|\}</string>
+				<key>name</key>
+				<string>punctuation.bracket.cfgpol</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>(^\s*)([\w]+)([^\s]+)</string>
+				<key>name</key>
+				<string>keyword.key.cfgpol</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>\b(:?true|false)\b</string>
+				<key>name</key>
+				<string>constant.language.cfgpol</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>\b[^\d\W]+\b|\b\d+[^\d\W]+\b|\b[^\d\W]+\d+\b|[^\w\s_]+</string>
+				<key>name</key>
+				<string>string.value.cfgpol</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>:([^:]*):.*</string>
+				<key>name</key>
+				<string>storage.modifier.package.cfgpol</string>
+			</dict>
+		</array>
+		<key>scopeName</key>
+		<string>source.cfgpol</string>
+		<key>uuid</key>
+		<string>e4a21776-f8a6-49c2-8484-286064e65964</string>
+	</dict>
 </plist>
