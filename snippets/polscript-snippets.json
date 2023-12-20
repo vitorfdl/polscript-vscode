@@ -1,0 +1,1904 @@
+{
+  "AlterAttributeTemporaryMod": {
+    "prefix": "AlterAttributeTemporaryMod",
+    "body": "AlterAttributeTemporaryMod(character := $1, attrname := $2, delta_tenths := $3)",
+    "description": "AlterAttributeTemporaryMod function"
+  },
+  "BaseSkillToRawSkill": {
+    "prefix": "BaseSkillToRawSkill",
+    "body": "BaseSkillToRawSkill(baseskill := $1)",
+    "description": "BaseSkillToRawSkill function"
+  },
+  "CheckSkill": {
+    "prefix": "CheckSkill",
+    "body": "CheckSkill(character := $1, skillid := $2, difficulty := $3, points := $4)",
+    "description": "CheckSkill function"
+  },
+  "GetAttribute": {
+    "prefix": "GetAttribute",
+    "body": "GetAttribute(character := $1, attrname := $2)",
+    "description": "GetAttribute function"
+  },
+  "GetAttributeBaseValue": {
+    "prefix": "GetAttributeBaseValue",
+    "body": "GetAttributeBaseValue(character := $1, attrname := $2)",
+    "description": "GetAttributeBaseValue function"
+  },
+  "GetAttributeCap": {
+    "prefix": "GetAttributeCap",
+    "body": "GetAttributeCap(character := $1, attrname := $2)",
+    "description": "GetAttributeCap function"
+  },
+  "GetAttributeDefaultCap": {
+    "prefix": "GetAttributeDefaultCap",
+    "body": "GetAttributeDefaultCap(attrname := $1)",
+    "description": "GetAttributeDefaultCap function"
+  },
+  "GetAttributeIntrinsicMod": {
+    "prefix": "GetAttributeIntrinsicMod",
+    "body": "GetAttributeIntrinsicMod(character := $1, attrname := $2)",
+    "description": "GetAttributeIntrinsicMod function"
+  },
+  "GetAttributeLock": {
+    "prefix": "GetAttributeLock",
+    "body": "GetAttributeLock(character := $1, attrname := $2)",
+    "description": "GetAttributeLock function"
+  },
+  "GetAttributeName": {
+    "prefix": "GetAttributeName",
+    "body": "GetAttributeName(alias_name := $1)",
+    "description": "GetAttributeName function"
+  },
+  "GetAttributeTemporaryMod": {
+    "prefix": "GetAttributeTemporaryMod",
+    "body": "GetAttributeTemporaryMod(character := $1, attrname := $2)",
+    "description": "GetAttributeTemporaryMod function"
+  },
+  "RawSkillToBaseSkill": {
+    "prefix": "RawSkillToBaseSkill",
+    "body": "RawSkillToBaseSkill(rawskill := $1)",
+    "description": "RawSkillToBaseSkill function"
+  },
+  "SetAttributeBaseValue": {
+    "prefix": "SetAttributeBaseValue",
+    "body": "SetAttributeBaseValue(character := $1, attrname := $2, basevalue_tenths := $3)",
+    "description": "SetAttributeBaseValue function"
+  },
+  "SetAttributeCap": {
+    "prefix": "SetAttributeCap",
+    "body": "SetAttributeCap(character := $1, attrname := $2, capvalue := $3)",
+    "description": "SetAttributeCap function"
+  },
+  "SetAttributeLock": {
+    "prefix": "SetAttributeLock",
+    "body": "SetAttributeLock(character := $1, attrname := $2, lockstate := $3)",
+    "description": "SetAttributeLock function"
+  },
+  "SetAttributeTemporaryMod": {
+    "prefix": "SetAttributeTemporaryMod",
+    "body": "SetAttributeTemporaryMod(character := $1, attrname := $2, tempmod_tenths := $3)",
+    "description": "SetAttributeTemporaryMod function"
+  },
+  "Bin": {
+    "prefix": "Bin",
+    "body": "Bin(number := $1)",
+    "description": "Bin function"
+  },
+  "CAsc": {
+    "prefix": "CAsc",
+    "body": "CAsc(str := $1)",
+    "description": "CAsc function"
+  },
+  "CAscZ": {
+    "prefix": "CAscZ",
+    "body": "CAscZ(str := $1, nullterm := ${2:0})",
+    "description": "CAscZ function"
+  },
+  "CChr": {
+    "prefix": "CChr",
+    "body": "CChr(number := $1)",
+    "description": "CChr function"
+  },
+  "CChrZ": {
+    "prefix": "CChrZ",
+    "body": "CChrZ(intarray := $1, break_at_first_null := ${2:0})",
+    "description": "CChrZ function"
+  },
+  "CDbl": {
+    "prefix": "CDbl",
+    "body": "CDbl(expr := $1)",
+    "description": "CDbl function"
+  },
+  "CInt": {
+    "prefix": "CInt",
+    "body": "CInt(expr := $1)",
+    "description": "CInt function"
+  },
+  "CStr": {
+    "prefix": "CStr",
+    "body": "CStr(expr := $1)",
+    "description": "CStr function"
+  },
+  "Compare": {
+    "prefix": "Compare",
+    "body": "Compare(str1 := $1, str2 := $2, pos1_start := ${3:0}, pos1_end := ${4:0}, pos2_start := ${5:0}, pos2_end := ${6:0})",
+    "description": "Compare function"
+  },
+  "Find": {
+    "prefix": "Find",
+    "body": "Find(str := $1, search := $2, start := $3)",
+    "description": "Find function"
+  },
+  "Hex": {
+    "prefix": "Hex",
+    "body": "Hex(number := $1)",
+    "description": "Hex function"
+  },
+  "Len": {
+    "prefix": "Len",
+    "body": "Len(str_or_array := $1)",
+    "description": "Len function"
+  },
+  "Lower": {
+    "prefix": "Lower",
+    "body": "Lower(str := $1)",
+    "description": "Lower function"
+  },
+  "Pack": {
+    "prefix": "Pack",
+    "body": "Pack(expr := $1)",
+    "description": "Pack function"
+  },
+  "SizeOf": {
+    "prefix": "SizeOf",
+    "body": "SizeOf(expr := $1)",
+    "description": "SizeOf function"
+  },
+  "SplitWords": {
+    "prefix": "SplitWords",
+    "body": "SplitWords(str := $1, delimiter := \" \"$2, max_split := -${3:1})",
+    "description": "SplitWords function"
+  },
+  "StrReplace": {
+    "prefix": "StrReplace",
+    "body": "StrReplace(str := $1, to_replace := $2, replace_with := $3)",
+    "description": "StrReplace function"
+  },
+  "SubStr": {
+    "prefix": "SubStr",
+    "body": "SubStr(str := $1, start := $2, length := $3)",
+    "description": "SubStr function"
+  },
+  "SubStrReplace": {
+    "prefix": "SubStrReplace",
+    "body": "SubStrReplace(str := $1, replace_with := $2, start := $3, length := ${4:0})",
+    "description": "SubStrReplace function"
+  },
+  "Trim": {
+    "prefix": "Trim",
+    "body": "Trim(str := $1, type := ${2:TRIM_BOTH}, to_trim := \" \"$3)",
+    "description": "Trim function"
+  },
+  "TypeOf": {
+    "prefix": "TypeOf",
+    "body": "TypeOf(expr := $1)",
+    "description": "TypeOf function"
+  },
+  "TypeOfInt": {
+    "prefix": "TypeOfInt",
+    "body": "TypeOfInt(expr := $1)",
+    "description": "TypeOfInt function"
+  },
+  "Unpack": {
+    "prefix": "Unpack",
+    "body": "Unpack(str := $1)",
+    "description": "Unpack function"
+  },
+  "Upper": {
+    "prefix": "Upper",
+    "body": "Upper(str := $1)",
+    "description": "Upper function"
+  },
+
+  "Print": {
+    "prefix": "Print",
+    "body": "Print(anything := $1)",
+    "description": "Print function"
+  },
+  "BoatFromItem": {
+    "prefix": "BoatFromItem",
+    "body": "BoatFromItem(item := $1)",
+    "description": "BoatFromItem function"
+  },
+  "MoveBoat": {
+    "prefix": "MoveBoat",
+    "body": "MoveBoat(boat := $1, facing := $2, speed := ${3:BOAT_SPEED_ONE_TILE})",
+    "description": "MoveBoat function"
+  },
+  "MoveBoatRelative": {
+    "prefix": "MoveBoatRelative",
+    "body": "MoveBoatRelative(boat := $1, direction := $2, speed := ${3:BOAT_SPEED_ONE_TILE})",
+    "description": "MoveBoatRelative function"
+  },
+  "MoveBoatXY": {
+    "prefix": "MoveBoatXY",
+    "body": "MoveBoatXY(boat := $1, x := $2, y := $3)",
+    "description": "MoveBoatXY function"
+  },
+  "RegisterItemWithBoat": {
+    "prefix": "RegisterItemWithBoat",
+    "body": "RegisterItemWithBoat(boat := $1, item := $1)",
+    "description": "RegisterItemWithBoat function"
+  },
+  "SystemFindBoatBySerial": {
+    "prefix": "SystemFindBoatBySerial",
+    "body": "SystemFindBoatBySerial(serial := $1)",
+    "description": "SystemFindBoatBySerial function"
+  },
+  "TurnBoat": {
+    "prefix": "TurnBoat",
+    "body": "TurnBoat(boat := $1, direction := $1)",
+    "description": "TurnBoat function"
+  },
+  "AppendConfigFileElem": {
+    "prefix": "AppendConfigFileElem",
+    "body": "AppendConfigFileElem(filename := $1, elemtype := $2, elemkey := $3, properties := $4)",
+    "description": "AppendConfigFileElem function"
+  },
+  "FindConfigElem": {
+    "prefix": "FindConfigElem",
+    "body": "FindConfigElem(config_file := $1, key := $2)",
+    "description": "FindConfigElem function"
+  },
+  "GetConfigInt": {
+    "prefix": "GetConfigInt",
+    "body": "GetConfigInt(element := $1, property_name := $2)",
+    "description": "GetConfigInt function"
+  },
+  "GetConfigIntArray": {
+    "prefix": "GetConfigIntArray",
+    "body": "GetConfigIntArray(element := $1, property_name := $2)",
+    "description": "GetConfigIntArray function"
+  },
+  "GetConfigIntKeys": {
+    "prefix": "GetConfigIntKeys",
+    "body": "GetConfigIntKeys(config_file := $1)",
+    "description": "GetConfigIntKeys function"
+  },
+  "GetConfigMaxIntKey": {
+    "prefix": "GetConfigMaxIntKey",
+    "body": "GetConfigMaxIntKey(config_file := $1)",
+    "description": "GetConfigMaxIntKey function"
+  },
+  "GetConfigReal": {
+    "prefix": "GetConfigReal",
+    "body": "GetConfigReal(element := $1, property_name := $2)",
+    "description": "GetConfigReal function"
+  },
+  "GetConfigString": {
+    "prefix": "GetConfigString",
+    "body": "GetConfigString(element := $1, property_name := $2)",
+    "description": "GetConfigString function"
+  },
+  "GetConfigStringArray": {
+    "prefix": "GetConfigStringArray",
+    "body": "GetConfigStringArray(element := $1, property_name := $2)",
+    "description": "GetConfigStringArray function"
+  },
+  "GetConfigStringDictionary": {
+    "prefix": "GetConfigStringDictionary",
+    "body": "GetConfigStringDictionary(element := $1, property_name := $2)",
+    "description": "GetConfigStringDictionary function"
+  },
+  "GetConfigStringKeys": {
+    "prefix": "GetConfigStringKeys",
+    "body": "GetConfigStringKeys(config_file := $1)",
+    "description": "GetConfigStringKeys function"
+  },
+  "ListConfigElemProps": {
+    "prefix": "ListConfigElemProps",
+    "body": "ListConfigElemProps(element := $1)",
+    "description": "ListConfigElemProps function"
+  },
+  "LoadTusScpFile": {
+    "prefix": "LoadTusScpFile",
+    "body": "LoadTusScpFile(filename := $1)",
+    "description": "LoadTusScpFile function"
+  },
+  "ReadConfigFile": {
+    "prefix": "ReadConfigFile",
+    "body": "ReadConfigFile(filename := $1)",
+    "description": "ReadConfigFile function"
+  },
+  "UnloadConfigFile": {
+    "prefix": "UnloadConfigFile",
+    "body": "UnloadConfigFile(filename := $1)",
+    "description": "UnloadConfigFile function"
+  },
+  "PrintTextAboveCL": {
+    "prefix": "PrintTextAboveCL",
+    "body": "PrintTextAboveCL(character := $1, cliloc_num := $2, uc_text := ${3:array}, font := ${4:_DEFAULT_CLFONT}, color := ${5:_DEFAULT_CLCOLOR})",
+    "description": "PrintTextAboveCL function"
+  },
+  "PrintTextAbovePrivateCL": {
+    "prefix": "PrintTextAbovePrivateCL",
+    "body": "PrintTextAbovePrivateCL(character := $1, object := $2, cliloc_num := $3, uc_text := ${4:array}, font := ${5:_DEFAULT_CLFONT}, color := ${6:_DEFAULT_CLCOLOR})",
+    "description": "PrintTextAbovePrivateCL function"
+  },
+  "SendSysMessageCL": {
+    "prefix": "SendSysMessageCL",
+    "body": "SendSysMessageCL(character := $1, cliloc_num := $2, uc_text := ${3:array}, font := ${4:_DEFAULT_CLFONT}, color := ${5:_DEFAULT_CLCOLOR})",
+    "description": "SendSysMessageCL function"
+  },
+  "CreateDataFile": {
+    "prefix": "CreateDataFile",
+    "body": "CreateDataFile(filespec := $1, flags := ${2:DF_KEYTYPE_STRING})",
+    "description": "CreateDataFile function"
+  },
+  "ListDataFiles": {
+    "prefix": "ListDataFiles",
+    "body": "ListDataFiles()",
+    "description": "ListDataFiles function"
+  },
+  "OpenDataFile": {
+    "prefix": "OpenDataFile",
+    "body": "OpenDataFile(filespec := $1)",
+    "description": "OpenDataFile function"
+  },
+  "UnloadDataFile": {
+    "prefix": "UnloadDataFile",
+    "body": "UnloadDataFile(filespec := $1)",
+    "description": "UnloadDataFile function"
+  },
+
+  "AppendToFile": {
+    "prefix": "AppendToFile",
+    "body": "AppendToFile(filename := $1, textlines := $2)",
+    "description": "AppendToFile function"
+  },
+  "CreateDirectory": {
+    "prefix": "CreateDirectory",
+    "body": "CreateDirectory(dirname := $1)",
+    "description": "CreateDirectory function"
+  },
+  "CreateXmlFile": {
+    "prefix": "CreateXmlFile",
+    "body": "CreateXmlFile()",
+    "description": "CreateXmlFile function"
+  },
+  "FileExists": {
+    "prefix": "FileExists",
+    "body": "FileExists(filename := $1)",
+    "description": "FileExists function"
+  },
+  "ListDirectory": {
+    "prefix": "ListDirectory",
+    "body": "ListDirectory(dirname := $1, extension := ${2:LISTDIR_ALL_FILES}, listdirs := ${3:LISTDIR_DONT_LIST_DIRS})",
+    "description": "ListDirectory function"
+  },
+  "LogToFile": {
+    "prefix": "LogToFile",
+    "body": "LogToFile(filename := $1, line := $2, flags := ${3:0})",
+    "description": "LogToFile function"
+  },
+  "OpenBinaryFile": {
+    "prefix": "OpenBinaryFile",
+    "body": "OpenBinaryFile(filename := $1, mode := ${2:OPENMODE_IN}, endian := ${3:LITTLE_ENDIAN})",
+    "description": "OpenBinaryFile function"
+  },
+  "OpenXmlFile": {
+    "prefix": "OpenXmlFile",
+    "body": "OpenXmlFile(filename := $1)",
+    "description": "OpenXmlFile function"
+  },
+  "ReadFile": {
+    "prefix": "ReadFile",
+    "body": "ReadFile(filename := $1)",
+    "description": "ReadFile function"
+  },
+  "WriteFile": {
+    "prefix": "WriteFile",
+    "body": "WriteFile(filename := $1, textcontents := $2)",
+    "description": "WriteFile function"
+  },
+
+  "CreateGuild": {
+    "prefix": "CreateGuild",
+    "body": "CreateGuild()",
+    "description": "CreateGuild function"
+  },
+  "DestroyGuild": {
+    "prefix": "DestroyGuild",
+    "body": "DestroyGuild(guild := $1)",
+    "description": "DestroyGuild function"
+  },
+  "FindGuild": {
+    "prefix": "FindGuild",
+    "body": "FindGuild(guildid := $1)",
+    "description": "FindGuild function"
+  },
+  "ListGuilds": {
+    "prefix": "ListGuilds",
+    "body": "ListGuilds()",
+    "description": "ListGuilds function"
+  },
+
+  "QueryIP": {
+    "prefix": "QueryIP",
+    "body": "QueryIP()",
+    "description": "QueryIP function"
+  },
+  "QueryParam": {
+    "prefix": "QueryParam",
+    "body": "QueryParam(param := $1)",
+    "description": "QueryParam function"
+  },
+  "WriteHtml": {
+    "prefix": "WriteHtml",
+    "body": "WriteHtml(html := $1)",
+    "description": "WriteHtml function"
+  },
+  "WriteHtmlRaw": {
+    "prefix": "WriteHtmlRaw",
+    "body": "WriteHtmlRaw(html := $1)",
+    "description": "WriteHtmlRaw function"
+  },
+
+  "ACos": {
+    "prefix": "ACos",
+    "body": "ACos(x := $1)",
+    "description": "ACos function"
+  },
+  "ASin": {
+    "prefix": "ASin",
+    "body": "ASin(x := $1)",
+    "description": "ASin function"
+  },
+  "ATan": {
+    "prefix": "ATan",
+    "body": "ATan(x := $1)",
+    "description": "ATan function"
+  },
+  "Abs": {
+    "prefix": "Abs",
+    "body": "Abs(x := $1)",
+    "description": "Abs function"
+  },
+  "Ceil": {
+    "prefix": "Ceil",
+    "body": "Ceil(x := $1)",
+    "description": "Ceil function"
+  },
+  "ConstE": {
+    "prefix": "ConstE",
+    "body": "ConstE()",
+    "description": "ConstE function"
+  },
+  "ConstPi": {
+    "prefix": "ConstPi",
+    "body": "ConstPi()",
+    "description": "ConstPi function"
+  },
+  "Cos": {
+    "prefix": "Cos",
+    "body": "Cos(x := $1)",
+    "description": "Cos function"
+  },
+  "DegToRad": {
+    "prefix": "DegToRad",
+    "body": "DegToRad(degrees := $1)",
+    "description": "DegToRad function"
+  },
+  "Floor": {
+    "prefix": "Floor",
+    "body": "Floor(x := $1)",
+    "description": "Floor function"
+  },
+  "FormatRealToString": {
+    "prefix": "FormatRealToString",
+    "body": "FormatRealToString(value := $1, precision := $2)",
+    "description": "FormatRealToString function"
+  },
+  "Log10": {
+    "prefix": "Log10",
+    "body": "Log10(x := $1)",
+    "description": "Log10 function"
+  },
+  "LogE": {
+    "prefix": "LogE",
+    "body": "LogE(x := $1)",
+    "description": "LogE function"
+  },
+  "Max": {
+    "prefix": "Max",
+    "body": "Max(x := $1, y := ${2:0})",
+    "description": "Max function"
+  },
+  "Min": {
+    "prefix": "Min",
+    "body": "Min(x := $1, y := ${2:0})",
+    "description": "Min function"
+  },
+  "Pow": {
+    "prefix": "Pow",
+    "body": "Pow(x := $1, y := $2)",
+    "description": "Pow function"
+  },
+  "RadToDeg": {
+    "prefix": "RadToDeg",
+    "body": "RadToDeg(radians := $1)",
+    "description": "RadToDeg function"
+  },
+  "Root": {
+    "prefix": "Root",
+    "body": "Root(x := $1, y := $2)",
+    "description": "Root function"
+  },
+  "Sin": {
+    "prefix": "Sin",
+    "body": "Sin(x := $1)",
+    "description": "Sin function"
+  },
+  "Sqrt": {
+    "prefix": "Sqrt",
+    "body": "Sqrt(x := $1)",
+    "description": "Sqrt function"
+  },
+  "Tan": {
+    "prefix": "Tan",
+    "body": "Tan(x := $1)",
+    "description": "Tan function"
+  },
+
+  "CanMove": {
+    "prefix": "CanMove",
+    "body": "CanMove(direction := $1)",
+    "description": "CanMove function"
+  },
+  "Face": {
+    "prefix": "Face",
+    "body": "Face(direction := $1, flags := ${2:FACE_NORMAL})",
+    "description": "Face function"
+  },
+  "GetProperty": {
+    "prefix": "GetProperty",
+    "body": "GetProperty(propertyname := $1)",
+    "description": "GetProperty function"
+  },
+  "IsLegalMove": {
+    "prefix": "IsLegalMove",
+    "body": "IsLegalMove(move := $1, boundingbox := $2)",
+    "description": "IsLegalMove function"
+  },
+  "MakeBoundingBox": {
+    "prefix": "MakeBoundingBox",
+    "body": "MakeBoundingBox(areastring := $1)",
+    "description": "MakeBoundingBox function"
+  },
+  "Move": {
+    "prefix": "Move",
+    "body": "Move(direction := $1)",
+    "description": "Move function"
+  },
+  "RunAwayFrom": {
+    "prefix": "RunAwayFrom",
+    "body": "RunAwayFrom(object := $1)",
+    "description": "RunAwayFrom function"
+  },
+  "RunAwayFromLocation": {
+    "prefix": "RunAwayFromLocation",
+    "body": "RunAwayFromLocation(x := $1, y := $2)",
+    "description": "RunAwayFromLocation function"
+  },
+  "RunToward": {
+    "prefix": "RunToward",
+    "body": "RunToward(object := $1)",
+    "description": "RunToward function"
+  },
+  "RunTowardLocation": {
+    "prefix": "RunTowardLocation",
+    "body": "RunTowardLocation(x := $1, y := $2)",
+    "description": "RunTowardLocation function"
+  },
+  "Say": {
+    "prefix": "Say",
+    "body": "Say(text := $1, text_type := ${2:SAY_TEXTTYPE_DEFAULT}, do_event := ${3:SAY_DOEVENT_DISABLE})",
+    "description": "Say function"
+  },
+  "SayUC": {
+    "prefix": "SayUC",
+    "body": "SayUC(uc_text := $1, text_type := ${2:SAY_TEXTTYPE_DEFAULT}, langcode := ${3:SAY_LANG}, do_event := ${4:SAY_DOEVENT_DISABLE})",
+    "description": "SayUC function"
+  },
+  "Self": {
+    "prefix": "Self",
+    "body": "Self()",
+    "description": "Self function"
+  },
+  "SetAnchor": {
+    "prefix": "SetAnchor",
+    "body": "SetAnchor(centerx := $1, centery := $2, distance_start := $3, percent_subtract := $4)",
+    "description": "SetAnchor function"
+  },
+  "SetOpponent": {
+    "prefix": "SetOpponent",
+    "body": "SetOpponent(character := $1)",
+    "description": "SetOpponent function"
+  },
+  "SetProperty": {
+    "prefix": "SetProperty",
+    "body": "SetProperty(propertyname := $1, propertyvalue := $2)",
+    "description": "SetProperty function"
+  },
+  "SetWarMode": {
+    "prefix": "SetWarMode",
+    "body": "SetWarMode(warmode := $1)",
+    "description": "SetWarMode function"
+  },
+  "TurnAwayFrom": {
+    "prefix": "TurnAwayFrom",
+    "body": "TurnAwayFrom(object := $1, flags := ${2:FACE_NORMAL})",
+    "description": "TurnAwayFrom function"
+  },
+  "TurnAwayFromLocation": {
+    "prefix": "TurnAwayFromLocation",
+    "body": "TurnAwayFromLocation(x := $1, y := $2, flags := ${3:FACE_NORMAL})",
+    "description": "TurnAwayFromLocation function"
+  },
+  "TurnToward": {
+    "prefix": "TurnToward",
+    "body": "TurnToward(object := $1, flags := ${2:FACE_NORMAL})",
+    "description": "TurnToward function"
+  },
+  "TurnTowardLocation": {
+    "prefix": "TurnTowardLocation",
+    "body": "TurnTowardLocation(x := $1, y := $2, flags := ${3:FACE_NORMAL})",
+    "description": "TurnTowardLocation function"
+  },
+  "WalkAwayFrom": {
+    "prefix": "WalkAwayFrom",
+    "body": "WalkAwayFrom(object := $1)",
+    "description": "WalkAwayFrom function"
+  },
+  "WalkAwayFromLocation": {
+    "prefix": "WalkAwayFromLocation",
+    "body": "WalkAwayFromLocation(x := $1, y := $2)",
+    "description": "WalkAwayFromLocation function"
+  },
+  "WalkToward": {
+    "prefix": "WalkToward",
+    "body": "WalkToward(object := $1)",
+    "description": "WalkToward function"
+  },
+  "WalkTowardLocation": {
+    "prefix": "WalkTowardLocation",
+    "body": "WalkTowardLocation(x := $1, y := $2)",
+    "description": "WalkTowardLocation function"
+  },
+  "Wander": {
+    "prefix": "Wander",
+    "body": "Wander()",
+    "description": "Wander function"
+  },
+  "Clear_Event_Queue": {
+    "prefix": "Clear_Event_Queue",
+    "body": "Clear_Event_Queue()",
+    "description": "Clear_Event_Queue function"
+  },
+  "Create_Debug_Context": {
+    "prefix": "Create_Debug_Context",
+    "body": "Create_Debug_Context()",
+    "description": "Create_Debug_Context function"
+  },
+  "Debugger": {
+    "prefix": "Debugger",
+    "body": "Debugger()",
+    "description": "Debugger function"
+  },
+  "Events_Waiting": {
+    "prefix": "Events_Waiting",
+    "body": "Events_Waiting()",
+    "description": "Events_Waiting function"
+  },
+  "GetPid": {
+    "prefix": "GetPid",
+    "body": "GetPid()",
+    "description": "GetPid function"
+  },
+  "GetProcess": {
+    "prefix": "GetProcess",
+    "body": "GetProcess(pid := ${1:0})",
+    "description": "GetProcess function"
+  },
+  "Is_Critical": {
+    "prefix": "Is_Critical",
+    "body": "Is_Critical()",
+    "description": "Is_Critical function"
+  },
+  "OpenConnection": {
+    "prefix": "OpenConnection",
+    "body": "OpenConnection(host := $1, port := $2, scriptdef := $3, params := $4)",
+    "description": "OpenConnection function"
+  },
+  "OpenURL": {
+    "prefix": "OpenURL",
+    "body": "OpenURL(character := $1, url := $2)",
+    "description": "OpenURL function"
+  },
+  "Run_Script": {
+    "prefix": "Run_Script",
+    "body": "Run_Script(script_name := $1, param := ${2:0})",
+    "description": "Run_Script function"
+  },
+  "Run_Script_To_Completion": {
+    "prefix": "Run_Script_To_Completion",
+    "body": "Run_Script_To_Completion(script_name := $1, param := ${2:0})",
+    "description": "Run_Script_To_Completion function"
+  },
+  "Set_Critical": {
+    "prefix": "Set_Critical",
+    "body": "Set_Critical(critical := $1)",
+    "description": "Set_Critical function"
+  },
+  "Set_Debug": {
+    "prefix": "Set_Debug",
+    "body": "Set_Debug(debug := $1)",
+    "description": "Set_Debug function"
+  },
+  "Set_Event_Queue_Size": {
+    "prefix": "Set_Event_Queue_Size",
+    "body": "Set_Event_Queue_Size(size := $1)",
+    "description": "Set_Event_Queue_Size function"
+  },
+  "Set_Priority": {
+    "prefix": "Set_Priority",
+    "body": "Set_Priority(priority := $1)",
+    "description": "Set_Priority function"
+  },
+  "Set_Script_Option": {
+    "prefix": "Set_Script_Option",
+    "body": "Set_Script_Option(optnum := $1, optval := $2)",
+    "description": "Set_Script_Option function"
+  },
+  "Sleep": {
+    "prefix": "Sleep",
+    "body": "Sleep(num_seconds := $1)",
+    "description": "Sleep function"
+  },
+  "Sleepms": {
+    "prefix": "Sleepms",
+    "body": "Sleepms(num_milliseconds := $1)",
+    "description": "Sleepms function"
+  },
+  "Start_Script": {
+    "prefix": "Start_Script",
+    "body": "Start_Script(script_name := $1, param := ${2:0})",
+    "description": "Start_Script function"
+  },
+  "Start_Skill_Script": {
+    "prefix": "Start_Skill_Script",
+    "body": "Start_Skill_Script(chr := $1, attr_name := $2, script_name := ${3:0}, param := ${4:0})",
+    "description": "Start_Skill_Script function"
+  },
+  "SysLog": {
+    "prefix": "SysLog",
+    "body": "SysLog(text := $1)",
+    "description": "SysLog function"
+  },
+  "System_RPM": {
+    "prefix": "System_RPM",
+    "body": "System_RPM()",
+    "description": "System_RPM function"
+  },
+  "Unload_Scripts": {
+    "prefix": "Unload_Scripts",
+    "body": "Unload_Scripts(scriptname := \"\"$1)",
+    "description": "Unload_Scripts function"
+  },
+  "Wait_For_Event": {
+    "prefix": "Wait_For_Event",
+    "body": "Wait_For_Event(num_seconds_timeout := $1)",
+    "description": "Wait_For_Event function"
+  },
+  "CreateParty": {
+    "prefix": "CreateParty",
+    "body": "CreateParty(leader := $1, firstmember := $2)",
+    "description": "CreateParty function"
+  },
+  "DisbandParty": {
+    "prefix": "DisbandParty",
+    "body": "DisbandParty(PartyRef := $1)",
+    "description": "DisbandParty function"
+  },
+  "SendPartyMsg": {
+    "prefix": "SendPartyMsg",
+    "body": "SendPartyMsg(party := $1, character := $2, uctext := $3)",
+    "description": "SendPartyMsg function"
+  },
+  "SendPrivatePartyMsg": {
+    "prefix": "SendPrivatePartyMsg",
+    "body": "SendPrivatePartyMsg(party := $1, character := $2, tocharacter := $3, uctext := $4)",
+    "description": "SendPrivatePartyMsg function"
+  },
+  "AddRealm": {
+    "prefix": "AddRealm",
+    "body": "AddRealm(realm_name := $1, base_realm := $2)",
+    "description": "AddRealm function"
+  },
+  "CreatePacket": {
+    "prefix": "CreatePacket",
+    "body": "CreatePacket(type := $1, size := $2)",
+    "description": "CreatePacket function"
+  },
+  "DeleteRealm": {
+    "prefix": "DeleteRealm",
+    "body": "DeleteRealm(realm := $1)",
+    "description": "DeleteRealm function"
+  },
+  "FormatItemDescription": {
+    "prefix": "FormatItemDescription",
+    "body": "FormatItemDescription(desc := $1, amount := ${2:1}, suffix := \"\"$3)",
+    "description": "FormatItemDescription function"
+  },
+  "GetCmdLevelName": {
+    "prefix": "GetCmdLevelName",
+    "body": "GetCmdLevelName(number := $1)",
+    "description": "GetCmdLevelName function"
+  },
+  "GetCmdLevelNumber": {
+    "prefix": "GetCmdLevelNumber",
+    "body": "GetCmdLevelNumber(name := $1)",
+    "description": "GetCmdLevelNumber function"
+  },
+  "GetItemDescriptor": {
+    "prefix": "GetItemDescriptor",
+    "body": "GetItemDescriptor(objtype := $1)",
+    "description": "GetItemDescriptor function"
+  },
+  "GetPackageByName": {
+    "prefix": "GetPackageByName",
+    "body": "GetPackageByName(name := $1)",
+    "description": "GetPackageByName function"
+  },
+  "IncRevision": {
+    "prefix": "IncRevision",
+    "body": "IncRevision(object := $1)",
+    "description": "IncRevision function"
+  },
+  "ListTextCommands": {
+    "prefix": "ListTextCommands",
+    "body": "ListTextCommands()",
+    "description": "ListTextCommands function"
+  },
+  "ListenPoints": {
+    "prefix": "ListenPoints",
+    "body": "ListenPoints()",
+    "description": "ListenPoints function"
+  },
+  "LogCPropProfile": {
+    "prefix": "LogCPropProfile",
+    "body": "LogCPropProfile()",
+    "description": "LogCPropProfile function"
+  },
+  "MD5Encrypt": {
+    "prefix": "MD5Encrypt",
+    "body": "MD5Encrypt(str := $1)",
+    "description": "MD5Encrypt function"
+  },
+  "Packages": {
+    "prefix": "Packages",
+    "body": "Packages()",
+    "description": "Packages function"
+  },
+  "ReadMillisecondClock": {
+    "prefix": "ReadMillisecondClock",
+    "body": "ReadMillisecondClock()",
+    "description": "ReadMillisecondClock function"
+  },
+  "Realms": {
+    "prefix": "Realms",
+    "body": "Realms(realm := \"\"$1)",
+    "description": "Realms function"
+  },
+  "ReloadConfiguration": {
+    "prefix": "ReloadConfiguration",
+    "body": "ReloadConfiguration()",
+    "description": "ReloadConfiguration function"
+  },
+  "SetSysTrayPopupText": {
+    "prefix": "SetSysTrayPopupText",
+    "body": "SetSysTrayPopupText(text := $1)",
+    "description": "SetSysTrayPopupText function"
+  },
+  "CreateRootItemInStorageArea": {
+    "prefix": "CreateRootItemInStorageArea",
+    "body": "CreateRootItemInStorageArea(area := $1, itemname := $2, objtype := $3)",
+    "description": "CreateRootItemInStorageArea function"
+  },
+  "CreateStorageArea": {
+    "prefix": "CreateStorageArea",
+    "body": "CreateStorageArea(areaname := $1)",
+    "description": "CreateStorageArea function"
+  },
+  "DestroyRootItemInStorageArea": {
+    "prefix": "DestroyRootItemInStorageArea",
+    "body": "DestroyRootItemInStorageArea(area := $1, itemname := $2)",
+    "description": "DestroyRootItemInStorageArea function"
+  },
+  "FindRootItemInStorageArea": {
+    "prefix": "FindRootItemInStorageArea",
+    "body": "FindRootItemInStorageArea(area := $1, itemname := $2)",
+    "description": "FindRootItemInStorageArea function"
+  },
+  "FindStorageArea": {
+    "prefix": "FindStorageArea",
+    "body": "FindStorageArea(areaname := $1)",
+    "description": "FindStorageArea function"
+  },
+  "StorageAreas": {
+    "prefix": "StorageAreas",
+    "body": "StorageAreas()",
+    "description": "StorageAreas function"
+  },
+  "mysql_affected_rows": {
+    "prefix": "mysql_affected_rows",
+    "body": "mysql_affected_rows(result := $1)",
+    "description": "mysql_affected_rows function"
+  },
+  "mysql_close": {
+    "prefix": "mysql_close",
+    "body": "mysql_close(connection := $1)",
+    "description": "mysql_close function"
+  },
+  "mysql_connect": {
+    "prefix": "mysql_connect",
+    "body": "mysql_connect(host := $1, username := $2, password := \"\"$3)",
+    "description": "mysql_connect function"
+  },
+  "mysql_fetch_row": {
+    "prefix": "mysql_fetch_row",
+    "body": "mysql_fetch_row(result := $1)",
+    "description": "mysql_fetch_row function"
+  },
+  "mysql_field_name": {
+    "prefix": "mysql_field_name",
+    "body": "mysql_field_name(result := $1, column_index := $2)",
+    "description": "mysql_field_name function"
+  },
+  "mysql_num_fields": {
+    "prefix": "mysql_num_fields",
+    "body": "mysql_num_fields(result := $1)",
+    "description": "mysql_num_fields function"
+  },
+  "mysql_num_rows": {
+    "prefix": "mysql_num_rows",
+    "body": "mysql_num_rows(result := $1)",
+    "description": "mysql_num_rows function"
+  },
+  "mysql_query": {
+    "prefix": "mysql_query",
+    "body": "mysql_query(connection := $1, query := $2, parameters := \"\"$3)",
+    "description": "mysql_query function"
+  },
+  "mysql_select_db": {
+    "prefix": "mysql_select_db",
+    "body": "mysql_select_db(connection := $1, database := $2)",
+    "description": "mysql_select_db function"
+  },
+  "BroadcastUC": {
+    "prefix": "BroadcastUC",
+    "body": "BroadcastUC(uc_text := $1, langcode := $2, font := ${3:_DEFAULT_UCFONT}, color := ${4:_DEFAULT_UCCOLOR})",
+    "description": "BroadcastUC function"
+  },
+  "PrintTextAbovePrivateUC": {
+    "prefix": "PrintTextAbovePrivateUC",
+    "body": "PrintTextAbovePrivateUC(above_object := $1, uc_text := $2, langcode := $3, character := $4, font := ${5:_DEFAULT_UCFONT}, color := ${6:_DEFAULT_UCCOLOR}, journal_print := ${7:JOURNAL_UC_PRINT_NAME})",
+    "description": "PrintTextAbovePrivateUC function"
+  },
+  "PrintTextAboveUC": {
+    "prefix": "PrintTextAboveUC",
+    "body": "PrintTextAboveUC(above_object := $1, uc_text := $2, langcode := $3, font := ${4:_DEFAULT_UCFONT}, color := ${5:_DEFAULT_UCCOLOR}, journal_print := ${6:JOURNAL_UC_PRINT_NAME})",
+    "description": "PrintTextAboveUC function"
+  },
+  "RequestInputUC": {
+    "prefix": "RequestInputUC",
+    "body": "RequestInputUC(character := $1, item := $2, uc_prompt := $3, langcode := $4)",
+    "description": "RequestInputUC function"
+  },
+  "SendSysMessageUC": {
+    "prefix": "SendSysMessageUC",
+    "body": "SendSysMessageUC(character := $1, uc_text := $2, langcode := $3, font := ${4:_DEFAULT_UCFONT}, color := ${5:_DEFAULT_UCCOLOR})",
+    "description": "SendSysMessageUC function"
+  },
+
+  "Accessible": {
+    "prefix": "Accessible",
+    "body": "Accessible(by_character := $1, item := $2)",
+    "description": "Accessible function"
+  },
+  "AddAmount": {
+    "prefix": "AddAmount",
+    "body": "AddAmount(item := $1, amount := $2)",
+    "description": "AddAmount function"
+  },
+  "AddMenuItem": {
+    "prefix": "AddMenuItem",
+    "body": "AddMenuItem(menu := $1, objtype := $2, text := $3, color := ${4:0})",
+    "description": "AddMenuItem function"
+  },
+  "ApplyConstraint": {
+    "prefix": "ApplyConstraint",
+    "body": "ApplyConstraint(objlist := $1, configfile := $2, propertyname := $3, minvalue := $4)",
+    "description": "ApplyConstraint function"
+  },
+  "AssignRectToWeatherRegion": {
+    "prefix": "AssignRectToWeatherRegion",
+    "body": "AssignRectToWeatherRegion(region := $1, xwest := $2, ynorth := $3, xeast := $4, ysouth := $5)",
+    "description": "AssignRectToWeatherRegion function"
+  },
+  "Attach": {
+    "prefix": "Attach",
+    "body": "Attach(character := $1)",
+    "description": "Attach function"
+  },
+  "Broadcast": {
+    "prefix": "Broadcast",
+    "body": "Broadcast(text := $1, font := ${2:_DEFAULT_TEXT_FONT}, color := ${3:_DEFAULT_TEXT_COLOR}, requiredCmdLevel := ${4:_DEFAULT_TEXT_REQUIREDCMD})",
+    "description": "Broadcast function"
+  },
+  "CanWalk": {
+    "prefix": "CanWalk",
+    "body": "CanWalk(movemode := $1, x1 := $2, y1 := $3, z1 := $4, x2_or_dir := $5, y2 := ${6:CANWALK_DIR}, realm := ${7:_DEFAULT_REALM})",
+    "description": "CanWalk function"
+  },
+  "CancelTarget": {
+    "prefix": "CancelTarget",
+    "body": "CancelTarget(of_whom := $1)",
+    "description": "CancelTarget function"
+  },
+  "CheckLineOfSight": {
+    "prefix": "CheckLineOfSight",
+    "body": "CheckLineOfSight(object1 := $1, object2 := $2)",
+    "description": "CheckLineOfSight function"
+  },
+  "CheckLosAt": {
+    "prefix": "CheckLosAt",
+    "body": "CheckLosAt(character := $1, x := $2, y := $3, z := $4)",
+    "description": "CheckLosAt function"
+  },
+  "CheckLosBetween": {
+    "prefix": "CheckLosBetween",
+    "body": "CheckLosBetween(x1 := $1, y1 := $2, z1 := $3, x2 := $4, y2 := $5, z2 := $6, realm := ${7:_DEFAULT_REALM})",
+    "description": "CheckLosBetween function"
+  },
+  "CloseGump": {
+    "prefix": "CloseGump",
+    "body": "CloseGump(character := $1, gumpid := $2, response := ${3:0})",
+    "description": "CloseGump function"
+  },
+  "CloseTradeWindow": {
+    "prefix": "CloseTradeWindow",
+    "body": "CloseTradeWindow(character := $1)",
+    "description": "CloseTradeWindow function"
+  },
+  "CloseWindow": {
+    "prefix": "CloseWindow",
+    "body": "CloseWindow(character := $1, type := $2, object := $3)",
+    "description": "CloseWindow function"
+  },
+  "ConsumeReagents": {
+    "prefix": "ConsumeReagents",
+    "body": "ConsumeReagents(who := $1, spellid := $2)",
+    "description": "ConsumeReagents function"
+  },
+  "ConsumeSubstance": {
+    "prefix": "ConsumeSubstance",
+    "body": "ConsumeSubstance(container := $1, objtype := $2, amount := $3)",
+    "description": "ConsumeSubstance function"
+  },
+  "CoordinateDistance": {
+    "prefix": "CoordinateDistance",
+    "body": "CoordinateDistance(x1 := $1, y1 := $2, x2 := $3, y2 := $4)",
+    "description": "CoordinateDistance function"
+  },
+  "CoordinateDistanceEuclidean": {
+    "prefix": "CoordinateDistanceEuclidean",
+    "body": "CoordinateDistanceEuclidean(x1 := $1, y1 := $2, x2 := $3, y2 := $4)",
+    "description": "CoordinateDistanceEuclidean function"
+  },
+  "CreateAccount": {
+    "prefix": "CreateAccount",
+    "body": "CreateAccount(acctname := $1, password := $2, enabled := $3)",
+    "description": "CreateAccount function"
+  },
+  "CreateItemAtLocation": {
+    "prefix": "CreateItemAtLocation",
+    "body": "CreateItemAtLocation(x := $1, y := $2, z := $3, objtype := $4, amount := ${5:1}, realm := ${6:_DEFAULT_REALM})",
+    "description": "CreateItemAtLocation function"
+  },
+  "CreateItemCopyAtLocation": {
+    "prefix": "CreateItemCopyAtLocation",
+    "body": "CreateItemCopyAtLocation(x := $1, y := $2, z := $3, item := $4, realm := ${5:_DEFAULT_REALM})",
+    "description": "CreateItemCopyAtLocation function"
+  },
+  "CreateItemInBackpack": {
+    "prefix": "CreateItemInBackpack",
+    "body": "CreateItemInBackpack(of_character := $1, objtype, amount := ${2:1})",
+    "description": "CreateItemInBackpack function"
+  },
+  "CreateItemInContainer": {
+    "prefix": "CreateItemInContainer",
+    "body": "CreateItemInContainer(container := $1, objtype := $2, amount := ${3:1})",
+    "description": "CreateItemInContainer function"
+  },
+  "CreateItemInInventory": {
+    "prefix": "CreateItemInInventory",
+    "body": "CreateItemInInventory(container := $1, objtype := $2, amount := ${3:1})",
+    "description": "CreateItemInInventory function"
+  },
+  "CreateMenu": {
+    "prefix": "CreateMenu",
+    "body": "CreateMenu(title := $1)",
+    "description": "CreateMenu function"
+  },
+  "CreateMultiAtLocation": {
+    "prefix": "CreateMultiAtLocation",
+    "body": "CreateMultiAtLocation(x := $1, y := $2, z := $3, objtype := $4, flags := ${5:0}, realm := ${6:_DEFAULT_REALM})",
+    "description": "CreateMultiAtLocation function"
+  },
+  "CreateNpcFromTemplate": {
+    "prefix": "CreateNpcFromTemplate",
+    "body": "CreateNpcFromTemplate(template := $1, x := $2, y := $3, z := $4, override_properties := ${5:0}, realm := ${6:_DEFAULT_REALM})",
+    "description": "CreateNpcFromTemplate function"
+  },
+  "DestroyItem": {
+    "prefix": "DestroyItem",
+    "body": "DestroyItem(Item := $1)",
+    "description": "DestroyItem function"
+  },
+  "DestroyMulti": {
+    "prefix": "DestroyMulti",
+    "body": "DestroyMulti(multi := $1)",
+    "description": "DestroyMulti function"
+  },
+  "Detach": {
+    "prefix": "Detach",
+    "body": "Detach()",
+    "description": "Detach function"
+  },
+  "DisableEvents": {
+    "prefix": "DisableEvents",
+    "body": "DisableEvents(eventtype := $1)",
+    "description": "DisableEvents function"
+  },
+  "DisconnectClient": {
+    "prefix": "DisconnectClient",
+    "body": "DisconnectClient(character := $1)",
+    "description": "DisconnectClient function"
+  },
+  "Distance": {
+    "prefix": "Distance",
+    "body": "Distance(obj1 := $1, obj2 := $2)",
+    "description": "Distance function"
+  },
+  "DistanceEuclidean": {
+    "prefix": "DistanceEuclidean",
+    "body": "DistanceEuclidean(obj1 := $1, obj2 := $2)",
+    "description": "DistanceEuclidean function"
+  },
+  "EnableEvents": {
+    "prefix": "EnableEvents",
+    "body": "EnableEvents(eventtype := $1, range := -${2:1})",
+    "description": "EnableEvents function"
+  },
+  "EnumerateItemsInContainer": {
+    "prefix": "EnumerateItemsInContainer",
+    "body": "EnumerateItemsInContainer(container := $1, flags := ${2:0})",
+    "description": "EnumerateItemsInContainer function"
+  },
+  "EnumerateOnlineCharacters": {
+    "prefix": "EnumerateOnlineCharacters",
+    "body": "EnumerateOnlineCharacters()",
+    "description": "EnumerateOnlineCharacters function"
+  },
+  "EquipFromTemplate": {
+    "prefix": "EquipFromTemplate",
+    "body": "EquipFromTemplate(character := $1, template := $2)",
+    "description": "EquipFromTemplate function"
+  },
+  "EquipItem": {
+    "prefix": "EquipItem",
+    "body": "EquipItem(mobile := $1, item := $2)",
+    "description": "EquipItem function"
+  },
+  "EraseGlobalProperty": {
+    "prefix": "EraseGlobalProperty",
+    "body": "EraseGlobalProperty(propname := $1)",
+    "description": "EraseGlobalProperty function"
+  },
+  "EraseObjProperty": {
+    "prefix": "EraseObjProperty",
+    "body": "EraseObjProperty(object := $1, propname := $2)",
+    "description": "EraseObjProperty function"
+  },
+  "FindAccount": {
+    "prefix": "FindAccount",
+    "body": "FindAccount(acctname := $1)",
+    "description": "FindAccount function"
+  },
+  "FindObjtypeInContainer": {
+    "prefix": "FindObjtypeInContainer",
+    "body": "FindObjtypeInContainer(container := $1, objtype := $2)",
+    "description": "FindObjtypeInContainer function"
+  },
+  "FindPath": {
+    "prefix": "FindPath",
+    "body": "FindPath(x1 := $1, y1 := $2, z1 := $3, x2 := $4, y2 := $5, z2 := $6, realm := ${7:_DEFAULT_REALM}, flags := ${8:FP_IGNORE_MOBILES}, searchskirt := ${9:5})",
+    "description": "FindPath function"
+  },
+  "FindSubstance": {
+    "prefix": "FindSubstance",
+    "body": "FindSubstance(container := $1, objtype := $2, amount := $3, makeinuse := ${4:0}, flags := ${5:0})",
+    "description": "FindSubstance function"
+  },
+  "GetAmount": {
+    "prefix": "GetAmount",
+    "body": "GetAmount(item := $1)",
+    "description": "GetAmount function"
+  },
+  "GetCommandHelp": {
+    "prefix": "GetCommandHelp",
+    "body": "GetCommandHelp(character := $1, command := $2)",
+    "description": "GetCommandHelp function"
+  },
+  "GetCoordsInLine": {
+    "prefix": "GetCoordsInLine",
+    "body": "GetCoordsInLine(x1 := $1, y1 := $2, x2 := $3, y2 := $4)",
+    "description": "GetCoordsInLine function"
+  },
+  "GetEquipmentByLayer": {
+    "prefix": "GetEquipmentByLayer",
+    "body": "GetEquipmentByLayer(character := $1, layer := $2)",
+    "description": "GetEquipmentByLayer function"
+  },
+  "GetFacing": {
+    "prefix": "GetFacing",
+    "body": "GetFacing(from_x := $1, from_y := $2, to_x := $3, to_y := $4)",
+    "description": "GetFacing function"
+  },
+  "GetGlobalProperty": {
+    "prefix": "GetGlobalProperty",
+    "body": "GetGlobalProperty(propname := $1)",
+    "description": "GetGlobalProperty function"
+  },
+  "GetGlobalPropertyNames": {
+    "prefix": "GetGlobalPropertyNames",
+    "body": "GetGlobalPropertyNames()",
+    "description": "GetGlobalPropertyNames function"
+  },
+  "GetHarvestDifficulty": {
+    "prefix": "GetHarvestDifficulty",
+    "body": "GetHarvestDifficulty(resource := $1, x := $2, y := $3, tiletype := $4, realm := ${5:_DEFAULT_REALM})",
+    "description": "GetHarvestDifficulty function"
+  },
+  "GetMapInfo": {
+    "prefix": "GetMapInfo",
+    "body": "GetMapInfo(x := $1, y := $2, realm := ${3:_DEFAULT_REALM})",
+    "description": "GetMapInfo function"
+  },
+  "GetMenuObjTypes": {
+    "prefix": "GetMenuObjTypes",
+    "body": "GetMenuObjTypes(menuname := $1)",
+    "description": "GetMenuObjTypes function"
+  },
+  "GetMidpointCircleCoords": {
+    "prefix": "GetMidpointCircleCoords",
+    "body": "GetMidpointCircleCoords(xcenter := $1, ycenter := $2, radius := $3)",
+    "description": "GetMidpointCircleCoords function"
+  },
+  "GetMultiDimensions": {
+    "prefix": "GetMultiDimensions",
+    "body": "GetMultiDimensions(multiid := $1)",
+    "description": "GetMultiDimensions function"
+  },
+  "GetObjProperty": {
+    "prefix": "GetObjProperty",
+    "body": "GetObjProperty(object := $1, property_name := $2)",
+    "description": "GetObjProperty function"
+  },
+  "GetObjPropertyNames": {
+    "prefix": "GetObjPropertyNames",
+    "body": "GetObjPropertyNames(object := $1)",
+    "description": "GetObjPropertyNames function"
+  },
+  "GetObjType": {
+    "prefix": "GetObjType",
+    "body": "GetObjType(object := $1)",
+    "description": "GetObjType function"
+  },
+  "GetObjTypeByName": {
+    "prefix": "GetObjTypeByName",
+    "body": "GetObjTypeByName(name := $1)",
+    "description": "GetObjTypeByName function"
+  },
+  "GetRegionLightLevelAtLocation": {
+    "prefix": "GetRegionLightLevelAtLocation",
+    "body": "GetRegionLightLevelAtLocation(x := $1, y := $2, realm := ${3:_DEFAULT_REALM})",
+    "description": "GetRegionLightLevelAtLocation function"
+  },
+  "GetRegionName": {
+    "prefix": "GetRegionName",
+    "body": "GetRegionName(object := $1)",
+    "description": "GetRegionName function"
+  },
+  "GetRegionNameAtLocation": {
+    "prefix": "GetRegionNameAtLocation",
+    "body": "GetRegionNameAtLocation(x := $1, y := $2, realm := ${3:_DEFAULT_REALM})",
+    "description": "GetRegionNameAtLocation function"
+  },
+  "GetRegionString": {
+    "prefix": "GetRegionString",
+    "body": "GetRegionString(resource := $1, x := $2, y := $3, propertyname := $4, realm := ${5:_DEFAULT_REALM})",
+    "description": "GetRegionString function"
+  },
+  "GetSpellDifficulty": {
+    "prefix": "GetSpellDifficulty",
+    "body": "GetSpellDifficulty(spellid := $1)",
+    "description": "GetSpellDifficulty function"
+  },
+  "GetStandingHeight": {
+    "prefix": "GetStandingHeight",
+    "body": "GetStandingHeight(x := $1, y := $2, startz := $3, realm := ${4:_DEFAULT_REALM})",
+    "description": "GetStandingHeight function"
+  },
+  "GetStandingLayers": {
+    "prefix": "GetStandingLayers",
+    "body": "GetStandingLayers(x := $1, y := $2, flags := ${3:MAPDATA_FLAG_ALL}, realm := ${4:_DEFAULT_REALM})",
+    "description": "GetStandingLayers function"
+  },
+  "GetWorldHeight": {
+    "prefix": "GetWorldHeight",
+    "body": "GetWorldHeight(x := $1, y := $2, realm := ${3:_DEFAULT_REALM})",
+    "description": "GetWorldHeight function"
+  },
+  "GrantPrivilege": {
+    "prefix": "GrantPrivilege",
+    "body": "GrantPrivilege(character := $1, privilege := $2)",
+    "description": "GrantPrivilege function"
+  },
+  "HarvestResource": {
+    "prefix": "HarvestResource",
+    "body": "HarvestResource(resource := $1, x := $2, y := $3, b := $4, n := $5, realm := ${6:_DEFAULT_REALM})",
+    "description": "HarvestResource function"
+  },
+  "IsStackable": {
+    "prefix": "IsStackable",
+    "body": "IsStackable(item1 := $1, item2 := $2)",
+    "description": "IsStackable function"
+  },
+  "ListAccounts": {
+    "prefix": "ListAccounts",
+    "body": "ListAccounts()",
+    "description": "ListAccounts function"
+  },
+  "ListEquippedItems": {
+    "prefix": "ListEquippedItems",
+    "body": "ListEquippedItems(who := $1)",
+    "description": "ListEquippedItems function"
+  },
+  "ListGhostsNearLocation": {
+    "prefix": "ListGhostsNearLocation",
+    "body": "ListGhostsNearLocation(x := $1, y := $2, z := $3, range := $4, realm := ${5:_DEFAULT_REALM})",
+    "description": "ListGhostsNearLocation function"
+  },
+  "ListHostiles": {
+    "prefix": "ListHostiles",
+    "body": "ListHostiles(characterx := $1, range := ${2:20}, flags := ${3:0})",
+    "description": "ListHostiles function"
+  },
+  "ListItemsAtLocation": {
+    "prefix": "ListItemsAtLocation",
+    "body": "ListItemsAtLocation(x := $1, y := $2, z := $3, realm := ${4:_DEFAULT_REALM})",
+    "description": "ListItemsAtLocation function"
+  },
+  "ListItemsNearLocation": {
+    "prefix": "ListItemsNearLocation",
+    "body": "ListItemsNearLocation(x := $1, y := $2, z := $3, range := $4, realm := ${5:_DEFAULT_REALM})",
+    "description": "ListItemsNearLocation function"
+  },
+  "ListItemsNearLocationOfType": {
+    "prefix": "ListItemsNearLocationOfType",
+    "body": "ListItemsNearLocationOfType(x := $1, y := $2, z := $3, range := $4, objtype := $5, realm := ${6:_DEFAULT_REALM})",
+    "description": "ListItemsNearLocationOfType function"
+  },
+  "ListItemsNearLocationWithFlag": {
+    "prefix": "ListItemsNearLocationWithFlag",
+    "body": "ListItemsNearLocationWithFlag(x := $1, y := $2, z := $3, range := $4, flags := $5, realm := ${6:_DEFAULT_REALM})",
+    "description": "ListItemsNearLocationWithFlag function"
+  },
+  "ListMobilesInBox": {
+    "prefix": "ListMobilesInBox",
+    "body": "ListMobilesInBox(x1 := $1, y1 := $2, z1 := $3, x2 := $4, y2 := $5, z2 := $6, realm := ${7:_DEFAULT_REALM})",
+    "description": "ListMobilesInBox function"
+  },
+  "ListMobilesInLineOfSight": {
+    "prefix": "ListMobilesInLineOfSight",
+    "body": "ListMobilesInLineOfSight(object := $1, range := $2)",
+    "description": "ListMobilesInLineOfSight function"
+  },
+  "ListMobilesNearLocation": {
+    "prefix": "ListMobilesNearLocation",
+    "body": "ListMobilesNearLocation(x := $1, y := $2, z := $3, range := $4, realm := ${5:_DEFAULT_REALM})",
+    "description": "ListMobilesNearLocation function"
+  },
+  "ListMobilesNearLocationEx": {
+    "prefix": "ListMobilesNearLocationEx",
+    "body": "ListMobilesNearLocationEx(x := $1, y := $2, z := $3, range := $4, flags := $5, realm := ${6:_DEFAULT_REALM})",
+    "description": "ListMobilesNearLocationEx function"
+  },
+  "ListMultisInBox": {
+    "prefix": "ListMultisInBox",
+    "body": "ListMultisInBox(x1 := $1, y1 := $2, z1 := $3, x2 := $4, y2 := $5, z2 := $6, realm := ${7:_DEFAULT_REALM})",
+    "description": "ListMultisInBox function"
+  },
+  "ListObjectsInBox": {
+    "prefix": "ListObjectsInBox",
+    "body": "ListObjectsInBox(x1 := $1, y1 := $2, z1 := $3, x2 := $4, y2 := $5, z2 := $6, realm := ${7:_DEFAULT_REALM})",
+    "description": "ListObjectsInBox function"
+  },
+  "ListOfflineMobilesInRealm": {
+    "prefix": "ListOfflineMobilesInRealm",
+    "body": "ListOfflineMobilesInRealm(realm := ${1:_DEFAULT_REALM})",
+    "description": "ListOfflineMobilesInRealm function"
+  },
+  "ListStaticsAtLocation": {
+    "prefix": "ListStaticsAtLocation",
+    "body": "ListStaticsAtLocation(x := $1, y := $2, z := $3, flags := ${4:0}, realm := ${5:_DEFAULT_REALM})",
+    "description": "ListStaticsAtLocation function"
+  },
+  "ListStaticsInBox": {
+    "prefix": "ListStaticsInBox",
+    "body": "ListStaticsInBox(x1 := $1, y1 := $2, z1 := $3, x2 := $4, y2 := $5, z2 := $6, flags := $7, realm := ${8:_DEFAULT_REALM})",
+    "description": "ListStaticsInBox function"
+  },
+  "ListStaticsNearLocation": {
+    "prefix": "ListStaticsNearLocation",
+    "body": "ListStaticsNearLocation(x := $1, y := $2, z := $3, range := $4, flags := ${5:0}, realm := ${6:_DEFAULT_REALM})",
+    "description": "ListStaticsNearLocation function"
+  },
+  "MoveItemToContainer": {
+    "prefix": "MoveItemToContainer",
+    "body": "MoveItemToContainer(item := $1, container := $2, x := -${3:1}, y := -${4:1}, add_to_existing_stack := ${5:0})",
+    "description": "MoveItemToContainer function"
+  },
+  "MoveItemToSecureTradeWin": {
+    "prefix": "MoveItemToSecureTradeWin",
+    "body": "MoveItemToSecureTradeWin(item := $1, character := $2)",
+    "description": "MoveItemToSecureTradeWin function"
+  },
+  "MoveObjectToLocation": {
+    "prefix": "MoveObjectToLocation",
+    "body": "MoveObjectToLocation(object := $1, x := $2, y := $3, z := $4, realm := ${5:_DEFAULT_REALM}, flags := ${6:MOVEOBJECT_NORMAL})",
+    "description": "MoveObjectToLocation function"
+  },
+  "OpenPaperdoll": {
+    "prefix": "OpenPaperdoll",
+    "body": "OpenPaperdoll(towhom := $1, forwhom := $2)",
+    "description": "OpenPaperdoll function"
+  },
+  "POLCore": {
+    "prefix": "POLCore",
+    "body": "POLCore()",
+    "description": "POLCore function"
+  },
+  "PerformAction": {
+    "prefix": "PerformAction",
+    "body": "PerformAction(character := $1, action := $2, framecount := ${3:5}, repeatcount := ${4:1}, backward := ${5:ACTION_DIR_FORWARD}, repeatflag := ${6:ACTION_NOREPEAT}, delay := ${7:1})",
+    "description": "PerformAction function"
+  },
+  "PlayLightningBoltEffect": {
+    "prefix": "PlayLightningBoltEffect",
+    "body": "PlayLightningBoltEffect(center_object := $1)",
+    "description": "PlayLightningBoltEffect function"
+  },
+  "PlayMovingEffect": {
+    "prefix": "PlayMovingEffect",
+    "body": "PlayMovingEffect(source := $1, target := $2, effect := $3, speed := $4, loop := ${5:0}, explode := ${6:0})",
+    "description": "PlayMovingEffect function"
+  },
+  "PlayMovingEffectEx": {
+    "prefix": "PlayMovingEffectEx",
+    "body": "PlayMovingEffectEx(source := $1, target := $2, effect := $3, speed := $4, duration := ${5:0}, hue := ${6:0}, render := ${7:0}, fixeddirection := ${8:0}, explode := ${9:0}, effect3d := ${10:0}, effect3dexplode := ${11:0}, effect3dsound := ${12:0})",
+    "description": "PlayMovingEffectEx function"
+  },
+  "PlayMovingEffectXYZ": {
+    "prefix": "PlayMovingEffectXYZ",
+    "body": "PlayMovingEffectXYZ(srcx := $1, srcy := $2, srcz := $3, dstx := $4, dsty := $5, dstz := $6, effect := $7, speed := $8, loop := ${9:0}, explode := ${10:0}, realm := ${11:_DEFAULT_REALM})",
+    "description": "PlayMovingEffectXYZ function"
+  },
+  "PlayMovingEffectXYZEx": {
+    "prefix": "PlayMovingEffectXYZEx",
+    "body": "PlayMovingEffectXYZEx(srcx := $1, srcy := $2, srcz := $3, dstx := $4, dsty := $5, dstz := $6, realm := ${7:_DEFAULT_REALM}, effect := $8, speed := $9, duration := ${10:0}, hue := ${11:0}, render := ${12:0}, fixeddirection := ${13:0}, explode := ${14:0}, effect3d := ${15:0}, effect3dexplode := ${16:0}, effect3dsound := ${17:0})",
+    "description": "PlayMovingEffectXYZEx function"
+  },
+  "PlayMusic": {
+    "prefix": "PlayMusic",
+    "body": "PlayMusic(chr := $1, music_id := ${2:0})",
+    "description": "PlayMusic function"
+  },
+  "PlayObjectCenteredEffect": {
+    "prefix": "PlayObjectCenteredEffect",
+    "body": "PlayObjectCenteredEffect(center := $1, effect := $2, speed := $3, loop := ${4:0})",
+    "description": "PlayObjectCenteredEffect function"
+  },
+  "PlayObjectCenteredEffectEx": {
+    "prefix": "PlayObjectCenteredEffectEx",
+    "body": "PlayObjectCenteredEffectEx(center := $1, effect := $2, speed := $3, duration := ${4:0}, hue := ${5:0}, render := ${6:0}, layer := ${7:0}, effect3d := ${8:0})",
+    "description": "PlayObjectCenteredEffectEx function"
+  },
+  "PlaySoundEffect": {
+    "prefix": "PlaySoundEffect",
+    "body": "PlaySoundEffect(object := $1, effect := $2)",
+    "description": "PlaySoundEffect function"
+  },
+  "PlaySoundEffectPrivate": {
+    "prefix": "PlaySoundEffectPrivate",
+    "body": "PlaySoundEffectPrivate(object := $1, effect := $2, playfor := $3)",
+    "description": "PlaySoundEffectPrivate function"
+  },
+  "PlaySoundEffectXYZ": {
+    "prefix": "PlaySoundEffectXYZ",
+    "body": "PlaySoundEffectXYZ(x := $1, y := $2, z := $3, effect := $4, realm := ${5:_DEFAULT_REALM})",
+    "description": "PlaySoundEffectXYZ function"
+  },
+  "PlayStationaryEffect": {
+    "prefix": "PlayStationaryEffect",
+    "body": "PlayStationaryEffect(x := $1, y := $2, z := $3, effect := $4, speed := $5, loop := ${6:0}, explode := ${7:0}, realm := ${8:_DEFAULT_REALM})",
+    "description": "PlayStationaryEffect function"
+  },
+  "PlayStationaryEffectEx": {
+    "prefix": "PlayStationaryEffectEx",
+    "body": "PlayStationaryEffectEx(x := $1, y := $2, z := $3, realm := ${4:_DEFAULT_REALM}, effect := $5, speed := $6, duration := ${7:0}, hue := ${8:0}, render := ${9:0}, effect3d := ${10:0})",
+    "description": "PlayStationaryEffectEx function"
+  },
+  "PrintTextAbove": {
+    "prefix": "PrintTextAbove",
+    "body": "PrintTextAbove(above_object := $1, text := $2, font := ${3:_DEFAULT_TEXT_FONT}, color := ${4:_DEFAULT_TEXT_COLOR}, journal_print := ${5:JOURNAL_PRINT_NAME})",
+    "description": "PrintTextAbove function"
+  },
+  "PrintTextAbovePrivate": {
+    "prefix": "PrintTextAbovePrivate",
+    "body": "PrintTextAbovePrivate(above_object := $1, text := $2, character := $3, font := ${4:_DEFAULT_TEXT_FONT}, color := ${5:_DEFAULT_TEXT_COLOR}, journal_print := ${6:JOURNAL_PRINT_NAME})",
+    "description": "PrintTextAbovePrivate function"
+  },
+  "ReadGameClock": {
+    "prefix": "ReadGameClock",
+    "body": "ReadGameClock()",
+    "description": "ReadGameClock function"
+  },
+  "RegisterForSpeechEvents": {
+    "prefix": "RegisterForSpeechEvents",
+    "body": "RegisterForSpeechEvents(at_object := $1, range := $2, flags := ${3:0})",
+    "description": "RegisterForSpeechEvents function"
+  },
+  "ReleaseItem": {
+    "prefix": "ReleaseItem",
+    "body": "ReleaseItem(item := $1)",
+    "description": "ReleaseItem function"
+  },
+  "RequestInput": {
+    "prefix": "RequestInput",
+    "body": "RequestInput(character := $1, item := $2, prompt := $3)",
+    "description": "RequestInput function"
+  },
+  "ReserveItem": {
+    "prefix": "ReserveItem",
+    "body": "ReserveItem(item := $1)",
+    "description": "ReserveItem function"
+  },
+  "RestartScript": {
+    "prefix": "RestartScript",
+    "body": "RestartScript(npc := $1)",
+    "description": "RestartScript function"
+  },
+  "Resurrect": {
+    "prefix": "Resurrect",
+    "body": "Resurrect(mobile := $1, flags := ${2:0})",
+    "description": "Resurrect function"
+  },
+  "RevokePrivilege": {
+    "prefix": "RevokePrivilege",
+    "body": "RevokePrivilege(character := $1, privilege := $2)",
+    "description": "RevokePrivilege function"
+  },
+  "SaveWorldState": {
+    "prefix": "SaveWorldState",
+    "body": "SaveWorldState()",
+    "description": "SaveWorldState function"
+  },
+  "SecureTradeWin": {
+    "prefix": "SecureTradeWin",
+    "body": "SecureTradeWin(character := $1, character2 := $2)",
+    "description": "SecureTradeWin function"
+  },
+  "SelectColor": {
+    "prefix": "SelectColor",
+    "body": "SelectColor(character := $1, item := $2)",
+    "description": "SelectColor function"
+  },
+  "SelectMenuItem2": {
+    "prefix": "SelectMenuItem2",
+    "body": "SelectMenuItem2(character := $1, menuname := $2)",
+    "description": "SelectMenuItem2 function"
+  },
+  "SendBuyWindow": {
+    "prefix": "SendBuyWindow",
+    "body": "SendBuyWindow(character := $1, container := $2, vendor := $3, items := $4, flags := ${5:0})",
+    "description": "SendBuyWindow function"
+  },
+  "SendCharProfile": {
+    "prefix": "SendCharProfile",
+    "body": "SendCharProfile(character := $1, of_who := $2, title := $3, uneditable_text := ${4:CHARPROFILE_NO_UNEDITABLE_TEXT}, editable_text := ${5:CHARPROFILE_NO_EDITABLE_TEXT})",
+    "description": "SendCharProfile function"
+  },
+  "SendCharacterRaceChanger": {
+    "prefix": "SendCharacterRaceChanger",
+    "body": "SendCharacterRaceChanger(character := $1)",
+    "description": "SendCharacterRaceChanger function"
+  },
+  "SendDialogGump": {
+    "prefix": "SendDialogGump",
+    "body": "SendDialogGump(who := $1, layout := $2, textlines := $3, x := ${4:0}, y := ${5:0}, flags := ${6:0}, gumpid := ${7:0})",
+    "description": "SendDialogGump function"
+  },
+  "SendEvent": {
+    "prefix": "SendEvent",
+    "body": "SendEvent(npc := $1, event := $2)",
+    "description": "SendEvent function"
+  },
+  "SendHousingTool": {
+    "prefix": "SendHousingTool",
+    "body": "SendHousingTool(who := $1, house := $2)",
+    "description": "SendHousingTool function"
+  },
+  "SendInstaResDialog": {
+    "prefix": "SendInstaResDialog",
+    "body": "SendInstaResDialog(character := $1)",
+    "description": "SendInstaResDialog function"
+  },
+  "SendOpenBook": {
+    "prefix": "SendOpenBook",
+    "body": "SendOpenBook(character := $1, book := $2)",
+    "description": "SendOpenBook function"
+  },
+  "SendOpenSpecialContainer": {
+    "prefix": "SendOpenSpecialContainer",
+    "body": "SendOpenSpecialContainer(character := $1, container := $2)",
+    "description": "SendOpenSpecialContainer function"
+  },
+  "SendOverallSeason": {
+    "prefix": "SendOverallSeason",
+    "body": "SendOverallSeason(season_id := $1, playsound := ${2:1})",
+    "description": "SendOverallSeason function"
+  },
+  "SendPacket": {
+    "prefix": "SendPacket",
+    "body": "SendPacket(to_whom := $1, packet_hex_string := $2)",
+    "description": "SendPacket function"
+  },
+  "SendPopUpMenu": {
+    "prefix": "SendPopUpMenu",
+    "body": "SendPopUpMenu(to_whom := $1, above := $2, menu := $3)",
+    "description": "SendPopUpMenu function"
+  },
+  "SendQuestArrow": {
+    "prefix": "SendQuestArrow",
+    "body": "SendQuestArrow(to_whom := $1, x := -${2:1}, y := -${3:1}, target := \"\"$4)",
+    "description": "SendQuestArrow function"
+  },
+  "SendSellWindow": {
+    "prefix": "SendSellWindow",
+    "body": "SendSellWindow(character := $1, vendor := $2, i1 := $3, i2 := $4, i3 := $5, flags := ${6:0})",
+    "description": "SendSellWindow function"
+  },
+  "SendSkillWindow": {
+    "prefix": "SendSkillWindow",
+    "body": "SendSkillWindow(towhom := $1, forwhom := $2)",
+    "description": "SendSkillWindow function"
+  },
+  "SendStatus": {
+    "prefix": "SendStatus",
+    "body": "SendStatus(character := $1)",
+    "description": "SendStatus function"
+  },
+  "SendStringAsTipWindow": {
+    "prefix": "SendStringAsTipWindow",
+    "body": "SendStringAsTipWindow(character := $1, text := $2)",
+    "description": "SendStringAsTipWindow function"
+  },
+  "SendSysMessage": {
+    "prefix": "SendSysMessage",
+    "body": "SendSysMessage(character := $1, text := $2, font := ${3:_DEFAULT_TEXT_FONT}, color := ${4:_DEFAULT_TEXT_COLOR})",
+    "description": "SendSysMessage function"
+  },
+  "SendTextEntryGump": {
+    "prefix": "SendTextEntryGump",
+    "body": "SendTextEntryGump(who := $1, line1 := $2, cancel := ${3:TE_CANCEL_ENABLE}, style := ${4:TE_STYLE_NORMAL}, maximum := ${5:40}, line2 := \"\"$6)",
+    "description": "SendTextEntryGump function"
+  },
+  "SendViewContainer": {
+    "prefix": "SendViewContainer",
+    "body": "SendViewContainer(character := $1, container := $2)",
+    "description": "SendViewContainer function"
+  },
+  "SetGlobalProperty": {
+    "prefix": "SetGlobalProperty",
+    "body": "SetGlobalProperty(propname := $1, propval := $2)",
+    "description": "SetGlobalProperty function"
+  },
+  "SetName": {
+    "prefix": "SetName",
+    "body": "SetName(object := $1, name := $2)",
+    "description": "SetName function"
+  },
+  "SetObjProperty": {
+    "prefix": "SetObjProperty",
+    "body": "SetObjProperty(object := $1, property_name := $2, property_value := $3)",
+    "description": "SetObjProperty function"
+  },
+  "SetRegionLightLevel": {
+    "prefix": "SetRegionLightLevel",
+    "body": "SetRegionLightLevel(regionname := $1, lightlevel := $2)",
+    "description": "SetRegionLightLevel function"
+  },
+  "SetRegionWeatherLevel": {
+    "prefix": "SetRegionWeatherLevel",
+    "body": "SetRegionWeatherLevel(region := $1, type := $2, severity := $3, aux := ${4:0}, lightoverride := -${5:1})",
+    "description": "SetRegionWeatherLevel function"
+  },
+  "SetScriptController": {
+    "prefix": "SetScriptController",
+    "body": "SetScriptController(who := $1)",
+    "description": "SetScriptController function"
+  },
+  "Shutdown": {
+    "prefix": "Shutdown",
+    "body": "Shutdown()",
+    "description": "Shutdown function"
+  },
+  "SingleClick": {
+    "prefix": "SingleClick",
+    "body": "SingleClick(who := $1, what := $2)",
+    "description": "SingleClick function"
+  },
+  "SpeakPowerWords": {
+    "prefix": "SpeakPowerWords",
+    "body": "SpeakPowerWords(who := $1, spellid := $2, font := ${3:_DEFAULT_TEXT_FONT}, color := ${4:_DEFAULT_TEXT_COLOR})",
+    "description": "SpeakPowerWords function"
+  },
+  "StartSpellEffect": {
+    "prefix": "StartSpellEffect",
+    "body": "StartSpellEffect(who := $1, spellid := $2)",
+    "description": "StartSpellEffect function"
+  },
+  "SubtractAmount": {
+    "prefix": "SubtractAmount",
+    "body": "SubtractAmount(item := $1, amount := $2)",
+    "description": "SubtractAmount function"
+  },
+  "SystemFindObjectBySerial": {
+    "prefix": "SystemFindObjectBySerial",
+    "body": "SystemFindObjectBySerial(serial := $1, sysfind_flags := ${2:0})",
+    "description": "SystemFindObjectBySerial function"
+  },
+  "Target": {
+    "prefix": "Target",
+    "body": "Target(by_character := $1, options := TGTOPT_CHECK_LOS+${2:TGTOPT_NEUTRAL})",
+    "description": "Target function"
+  },
+  "TargetCoordinates": {
+    "prefix": "TargetCoordinates",
+    "body": "TargetCoordinates(by_character := $1)",
+    "description": "TargetCoordinates function"
+  },
+  "TargetMultiPlacement": {
+    "prefix": "TargetMultiPlacement",
+    "body": "TargetMultiPlacement(character := $1, objtype := $2, flags := ${3:0}, xoffset := ${4:0}, yoffset := ${5:0}, hue := ${6:0})",
+    "description": "TargetMultiPlacement function"
+  },
+  "UpdateItem": {
+    "prefix": "UpdateItem",
+    "body": "UpdateItem(item := $1)",
+    "description": "UpdateItem function"
+  },
+  "UpdateMobile": {
+    "prefix": "UpdateMobile",
+    "body": "UpdateMobile(mobile := $1, recreate := ${2:UPDATEMOBILE_UPDATE})",
+    "description": "UpdateMobile function"
+  },
+  "UseItem": {
+    "prefix": "UseItem",
+    "body": "UseItem(item := $1, character := $2)",
+    "description": "UseItem function"
+  },
+  "RandomDiceRoll": {
+    "prefix": "RandomDiceRoll",
+    "body": "RandomDiceRoll(dice_string := $1)",
+    "description": "RandomDiceRoll function"
+  },
+  "RandomFloat": {
+    "prefix": "RandomFloat",
+    "body": "RandomFloat(below_this_float := $1)",
+    "description": "RandomFloat function"
+  },
+  "RandomInt": {
+    "prefix": "RandomInt",
+    "body": "RandomInt(below_this_number := $1)",
+    "description": "RandomInt function"
+  },
+  "RandomIntMinMax": {
+    "prefix": "RandomIntMinMax",
+    "body": "RandomIntMinMax(minValue := $1, maxValue := $2)",
+    "description": "RandomIntMinMax function"
+  },
+  "StrFormatTime": {
+    "prefix": "StrFormatTime",
+    "body": "StrFormatTime(format_string := $1, time_stamp := ${2:0})",
+    "description": "StrFormatTime function"
+  },
+  "ApplyDamage": {
+    "prefix": "ApplyDamage",
+    "body": "ApplyDamage(mobile := $1, damage := $2, userepsys := ${3:DAMAGE_USE_REPSYS}, send_damage := ${4:DAMAGE_USE_DEFAULT})",
+    "description": "ApplyDamage function"
+  },
+  "ApplyRawDamage": {
+    "prefix": "ApplyRawDamage",
+    "body": "ApplyRawDamage(Character := $1, Hits := $2, userepsys := ${3:DAMAGE_USE_REPSYS}, send_damage := ${4:DAMAGE_USE_DEFAULT})",
+    "description": "ApplyRawDamage function"
+  },
+  "ConsumeMana": {
+    "prefix": "ConsumeMana",
+    "body": "ConsumeMana(who := $1, spellid := $2)",
+    "description": "ConsumeMana function"
+  },
+  "ConsumeVital": {
+    "prefix": "ConsumeVital",
+    "body": "ConsumeVital(who := $1, vital := $2, hundredths := $3)",
+    "description": "ConsumeVital function"
+  },
+  "GetVital": {
+    "prefix": "GetVital",
+    "body": "GetVital(character := $1, vitalname := $2)",
+    "description": "GetVital function"
+  },
+  "GetVitalMaximumValue": {
+    "prefix": "GetVitalMaximumValue",
+    "body": "GetVitalMaximumValue(character := $1, vitalname := $2)",
+    "description": "GetVitalMaximumValue function"
+  },
+  "GetVitalName": {
+    "prefix": "GetVitalName",
+    "body": "GetVitalName(alias_name := $1)",
+    "description": "GetVitalName function"
+  },
+  "GetVitalRegenRate": {
+    "prefix": "GetVitalRegenRate",
+    "body": "GetVitalRegenRate(character := $1, vitalname := $2)",
+    "description": "GetVitalRegenRate function"
+  },
+  "HealDamage": {
+    "prefix": "HealDamage",
+    "body": "HealDamage(Character := $1, Hits := $2)",
+    "description": "HealDamage function"
+  },
+  "RecalcVitals": {
+    "prefix": "RecalcVitals",
+    "body": "RecalcVitals(character := $1, calc_attribute := ${2:RECALC_INTRINSIC_MOD}, calc_vital := ${3:RECALC_VITALS})",
+    "description": "RecalcVitals function"
+  },
+  "SetVital": {
+    "prefix": "SetVital",
+    "body": "SetVital(character := $1, vitalname := $2, value := $3)",
+    "description": "SetVital function"
+  }
+}

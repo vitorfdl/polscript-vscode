@@ -57,6 +57,15 @@
             <string>"</string>
             <key>end</key>
             <string>"</string>
+            <key>patterns</key>
+            <array>
+                <dict>
+                    <key>name</key>
+                    <string>variable.interpolation.polscript</string>
+                    <key>match</key>
+                    <string>\{([a-zA-Z0-9_]+)\}</string>
+                </dict>
+            </array>
         </dict>
         <!-- Numbers -->
         <dict>
@@ -102,21 +111,60 @@
         </dict>
         <!-- Structs -->
         <dict>
-            <key>name</key>
-            <string>entity.name.struct.polscript</string>
             <key>begin</key>
-            <string>var\s+\w+\s+:=\s+struct\{</string>
+            <string>\bstruct\s*\{</string>
+            <key>beginCaptures</key>
+            <dict>
+                <key>0</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.other.struct.begin.polscript</string>
+                </dict>
+            </dict>
             <key>end</key>
             <string>\}</string>
+            <key>endCaptures</key>
+            <dict>
+                <key>0</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.other.struct.end.polscript</string>
+                </dict>
+            </dict>
+            <key>name</key>
+            <string>meta.struct.polscript</string>
             <key>patterns</key>
             <array>
                 <dict>
-                    <key>match</key>
-                    <string>"\w+"\s+:=\s+".*"</string>
-                    <key>name</key>
-                    <string>entity.name.struct.property.polscript</string>
+                    <key>include</key>
+                    <string>#struct-content</string>
                 </dict>
             </array>
+        </dict>
+        <dict>
+            <key>struct-content</key>
+            <dict>
+                <key>patterns</key>
+                <array>
+                    <dict>
+                        <key>match</key>
+                        <string>"(?:\\.|[^\\"])*"</string>
+                        <key>name</key>
+                        <string>string.quoted.double.polscript</string>
+                    </dict>
+                    <dict>
+                        <key>match</key>
+                        <string>\b\w+\b\s*:=</string>
+                        <key>name</key>
+                        <string>variable.other.assignment.polscript</string>
+                    </dict>
+                    <!-- Include the struct pattern recursively -->
+                    <dict>
+                        <key>include</key>
+                        <string>#struct</string>
+                    </dict>
+                </array>
+            </dict>
         </dict>
         <!-- Arrays -->
         <dict>
@@ -135,6 +183,14 @@
                     <string>entity.name.array.property.polscript</string>
                 </dict>
             </array>
+        </dict>
+
+        <!-- Types -->
+        <dict>
+            <key>match</key>
+            <string>\b(struct|array|dictionary)\b(?!.*\{)</string>
+            <key>name</key>
+            <string>storage.type.polscript</string>
         </dict>
     </array>
     <key>scopeName</key>

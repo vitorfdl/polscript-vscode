@@ -1,0 +1,863 @@
+{
+  "DAMAGE_USE_REPSYS": {
+    "prefix": "DAMAGE_USE_REPSYS",
+    "body": "DAMAGE_USE_REPSYS",
+    "description": "DAMAGE_USE_REPSYS constant"
+  },
+  "DAMAGE_NO_REPSYS": {
+    "prefix": "DAMAGE_NO_REPSYS",
+    "body": "DAMAGE_NO_REPSYS",
+    "description": "DAMAGE_NO_REPSYS constant"
+  },
+  "DAMAGE_NO_SHOW": {
+    "prefix": "DAMAGE_NO_SHOW",
+    "body": "DAMAGE_NO_SHOW",
+    "description": "DAMAGE_NO_SHOW constant"
+  },
+  "DAMAGE_SHOW": {
+    "prefix": "DAMAGE_SHOW",
+    "body": "DAMAGE_SHOW",
+    "description": "DAMAGE_SHOW constant"
+  },
+  "DAMAGE_USE_DEFAULT": {
+    "prefix": "DAMAGE_USE_DEFAULT",
+    "body": "DAMAGE_USE_DEFAULT",
+    "description": "DAMAGE_USE_DEFAULT constant"
+  },
+  "RECALC_INTRINSIC_MOD": {
+    "prefix": "RECALC_INTRINSIC_MOD",
+    "body": "RECALC_INTRINSIC_MOD",
+    "description": "RECALC_INTRINSIC_MOD constant"
+  },
+  "RECALC_NO_INTRINSIC_MOD": {
+    "prefix": "RECALC_NO_INTRINSIC_MOD",
+    "body": "RECALC_NO_INTRINSIC_MOD",
+    "description": "RECALC_NO_INTRINSIC_MOD constant"
+  },
+  "RECALC_VITALS": {
+    "prefix": "RECALC_VITALS",
+    "body": "RECALC_VITALS",
+    "description": "RECALC_VITALS constant"
+  },
+  "RECALC_NO_VITALS": {
+    "prefix": "RECALC_NO_VITALS",
+    "body": "RECALC_NO_VITALS",
+    "description": "RECALC_NO_VITALS constant"
+  },
+
+  "CRMULTI_IGNORE_MULTIS": {
+    "prefix": "CRMULTI_IGNORE_MULTIS",
+    "body": "CRMULTI_IGNORE_MULTIS",
+    "description": "CRMULTI_IGNORE_MULTIS constant"
+  },
+  "CRMULTI_IGNORE_OBJECTS": {
+    "prefix": "CRMULTI_IGNORE_OBJECTS",
+    "body": "CRMULTI_IGNORE_OBJECTS",
+    "description": "CRMULTI_IGNORE_OBJECTS constant"
+  },
+  "CRMULTI_IGNORE_WORLDZ": {
+    "prefix": "CRMULTI_IGNORE_WORLDZ",
+    "body": "CRMULTI_IGNORE_WORLDZ",
+    "description": "CRMULTI_IGNORE_WORLDZ constant"
+  },
+  "CRMULTI_IGNORE_ALL": {
+    "prefix": "CRMULTI_IGNORE_ALL",
+    "body": "CRMULTI_IGNORE_ALL",
+    "description": "CRMULTI_IGNORE_ALL constant"
+  },
+  "CRMULTI_FACING_NORTH": {
+    "prefix": "CRMULTI_FACING_NORTH",
+    "body": "CRMULTI_FACING_NORTH",
+    "description": "CRMULTI_FACING_NORTH constant"
+  },
+  "CRMULTI_FACING_EAST": {
+    "prefix": "CRMULTI_FACING_EAST",
+    "body": "CRMULTI_FACING_EAST",
+    "description": "CRMULTI_FACING_EAST constant"
+  },
+  "CRMULTI_FACING_SOUTH": {
+    "prefix": "CRMULTI_FACING_SOUTH",
+    "body": "CRMULTI_FACING_SOUTH",
+    "description": "CRMULTI_FACING_SOUTH constant"
+  },
+  "CRMULTI_FACING_WEST": {
+    "prefix": "CRMULTI_FACING_WEST",
+    "body": "CRMULTI_FACING_WEST",
+    "description": "CRMULTI_FACING_WEST constant"
+  },
+  "LH_FLAG_LOS": {
+    "prefix": "LH_FLAG_LOS",
+    "body": "LH_FLAG_LOS",
+    "description": "LH_FLAG_LOS constant"
+  },
+  "LH_FLAG_INCLUDE_HIDDEN": {
+    "prefix": "LH_FLAG_INCLUDE_HIDDEN",
+    "body": "LH_FLAG_INCLUDE_HIDDEN",
+    "description": "LH_FLAG_INCLUDE_HIDDEN constant"
+  },
+  "FP_IGNORE_MOBILES": {
+    "prefix": "FP_IGNORE_MOBILES",
+    "body": "FP_IGNORE_MOBILES",
+    "description": "FP_IGNORE_MOBILES constant"
+  },
+  "FP_IGNORE_DOORS": {
+    "prefix": "FP_IGNORE_DOORS",
+    "body": "FP_IGNORE_DOORS",
+    "description": "FP_IGNORE_DOORS constant"
+  },
+  "VENDOR_SEND_AOS_TOOLTIP": {
+    "prefix": "VENDOR_SEND_AOS_TOOLTIP",
+    "body": "VENDOR_SEND_AOS_TOOLTIP",
+    "description": "VENDOR_SEND_AOS_TOOLTIP constant"
+  },
+  "VENDOR_BUYABLE_CONTAINER_FILTER": {
+    "prefix": "VENDOR_BUYABLE_CONTAINER_FILTER",
+    "body": "VENDOR_BUYABLE_CONTAINER_FILTER",
+    "description": "VENDOR_BUYABLE_CONTAINER_FILTER constant"
+  },
+  "SENDDIALOGMENU_FORCE_OLD": {
+    "prefix": "SENDDIALOGMENU_FORCE_OLD",
+    "body": "SENDDIALOGMENU_FORCE_OLD",
+    "description": "SENDDIALOGMENU_FORCE_OLD constant"
+  },
+  "LISTENPT_HEAR_GHOSTS": {
+    "prefix": "LISTENPT_HEAR_GHOSTS",
+    "body": "LISTENPT_HEAR_GHOSTS",
+    "description": "LISTENPT_HEAR_GHOSTS constant"
+  },
+  "LISTENPT_HEAR_TOKENS": {
+    "prefix": "LISTENPT_HEAR_TOKENS",
+    "body": "LISTENPT_HEAR_TOKENS",
+    "description": "LISTENPT_HEAR_TOKENS constant"
+  },
+  "LISTENPT_NO_SPEECH": {
+    "prefix": "LISTENPT_NO_SPEECH",
+    "body": "LISTENPT_NO_SPEECH",
+    "description": "LISTENPT_NO_SPEECH constant"
+  },
+  "ITEMS_IGNORE_STATICS": {
+    "prefix": "ITEMS_IGNORE_STATICS",
+    "body": "ITEMS_IGNORE_STATICS",
+    "description": "ITEMS_IGNORE_STATICS constant"
+  },
+  "ITEMS_IGNORE_MULTIS": {
+    "prefix": "ITEMS_IGNORE_MULTIS",
+    "body": "ITEMS_IGNORE_MULTIS",
+    "description": "ITEMS_IGNORE_MULTIS constant"
+  },
+  "LIST_IGNORE_Z": {
+    "prefix": "LIST_IGNORE_Z",
+    "body": "LIST_IGNORE_Z",
+    "description": "LIST_IGNORE_Z constant"
+  },
+  "LISTEX_FLAG_NORMAL": {
+    "prefix": "LISTEX_FLAG_NORMAL",
+    "body": "LISTEX_FLAG_NORMAL",
+    "description": "LISTEX_FLAG_NORMAL constant"
+  },
+  "LISTEX_FLAG_HIDDEN": {
+    "prefix": "LISTEX_FLAG_HIDDEN",
+    "body": "LISTEX_FLAG_HIDDEN",
+    "description": "LISTEX_FLAG_HIDDEN constant"
+  },
+  "LISTEX_FLAG_GHOST": {
+    "prefix": "LISTEX_FLAG_GHOST",
+    "body": "LISTEX_FLAG_GHOST",
+    "description": "LISTEX_FLAG_GHOST constant"
+  },
+  "LISTEX_FLAG_CONCEALED": {
+    "prefix": "LISTEX_FLAG_CONCEALED",
+    "body": "LISTEX_FLAG_CONCEALED",
+    "description": "LISTEX_FLAG_CONCEALED constant"
+  },
+  "LISTEX_FLAG_PLAYERS_ONLY": {
+    "prefix": "LISTEX_FLAG_PLAYERS_ONLY",
+    "body": "LISTEX_FLAG_PLAYERS_ONLY",
+    "description": "LISTEX_FLAG_PLAYERS_ONLY constant"
+  },
+  "LISTEX_FLAG_NPC_ONLY": {
+    "prefix": "LISTEX_FLAG_NPC_ONLY",
+    "body": "LISTEX_FLAG_NPC_ONLY",
+    "description": "LISTEX_FLAG_NPC_ONLY constant"
+  },
+  "TILEDATA_FLAG_BACKGROUND": {
+    "prefix": "TILEDATA_FLAG_BACKGROUND",
+    "body": "TILEDATA_FLAG_BACKGROUND",
+    "description": "TILEDATA_FLAG_BACKGROUND constant"
+  },
+  "TILEDATA_FLAG_WEAPON": {
+    "prefix": "TILEDATA_FLAG_WEAPON",
+    "body": "TILEDATA_FLAG_WEAPON",
+    "description": "TILEDATA_FLAG_WEAPON constant"
+  },
+  "TILEDATA_FLAG_TRANSPARENT": {
+    "prefix": "TILEDATA_FLAG_TRANSPARENT",
+    "body": "TILEDATA_FLAG_TRANSPARENT",
+    "description": "TILEDATA_FLAG_TRANSPARENT constant"
+  },
+  "TILEDATA_FLAG_TRANSLUCENT": {
+    "prefix": "TILEDATA_FLAG_TRANSLUCENT",
+    "body": "TILEDATA_FLAG_TRANSLUCENT",
+    "description": "TILEDATA_FLAG_TRANSLUCENT constant"
+  },
+  "TILEDATA_FLAG_WALL": {
+    "prefix": "TILEDATA_FLAG_WALL",
+    "body": "TILEDATA_FLAG_WALL",
+    "description": "TILEDATA_FLAG_WALL constant"
+  },
+  "TILEDATA_FLAG_DAMAGING": {
+    "prefix": "TILEDATA_FLAG_DAMAGING",
+    "body": "TILEDATA_FLAG_DAMAGING",
+    "description": "TILEDATA_FLAG_DAMAGING constant"
+  },
+  "TILEDATA_FLAG_IMPASSABLE": {
+    "prefix": "TILEDATA_FLAG_IMPASSABLE",
+    "body": "TILEDATA_FLAG_IMPASSABLE",
+    "description": "TILEDATA_FLAG_IMPASSABLE constant"
+  },
+  "TILEDATA_FLAG_WET": {
+    "prefix": "TILEDATA_FLAG_WET",
+    "body": "TILEDATA_FLAG_WET",
+    "description": "TILEDATA_FLAG_WET constant"
+  },
+  "TILEDATA_FLAG_UNK": {
+    "prefix": "TILEDATA_FLAG_UNK",
+    "body": "TILEDATA_FLAG_UNK",
+    "description": "TILEDATA_FLAG_UNK constant"
+  },
+  "TILEDATA_FLAG_SURFACE": {
+    "prefix": "TILEDATA_FLAG_SURFACE",
+    "body": "TILEDATA_FLAG_SURFACE",
+    "description": "TILEDATA_FLAG_SURFACE constant"
+  },
+  "TILEDATA_FLAG_BRIDGE": {
+    "prefix": "TILEDATA_FLAG_BRIDGE",
+    "body": "TILEDATA_FLAG_BRIDGE",
+    "description": "TILEDATA_FLAG_BRIDGE constant"
+  },
+  "TILEDATA_FLAG_STACKABLE": {
+    "prefix": "TILEDATA_FLAG_STACKABLE",
+    "body": "TILEDATA_FLAG_STACKABLE",
+    "description": "TILEDATA_FLAG_STACKABLE constant"
+  },
+  "TILEDATA_FLAG_WINDOW": {
+    "prefix": "TILEDATA_FLAG_WINDOW",
+    "body": "TILEDATA_FLAG_WINDOW",
+    "description": "TILEDATA_FLAG_WINDOW constant"
+  },
+  "TILEDATA_FLAG_NOSHOOT": {
+    "prefix": "TILEDATA_FLAG_NOSHOOT",
+    "body": "TILEDATA_FLAG_NOSHOOT",
+    "description": "TILEDATA_FLAG_NOSHOOT constant"
+  },
+  "TILEDATA_FLAG_PREFIX_A": {
+    "prefix": "TILEDATA_FLAG_PREFIX_A",
+    "body": "TILEDATA_FLAG_PREFIX_A",
+    "description": "TILEDATA_FLAG_PREFIX_A constant"
+  },
+  "TILEDATA_FLAG_PREFIX_AN": {
+    "prefix": "TILEDATA_FLAG_PREFIX_AN",
+    "body": "TILEDATA_FLAG_PREFIX_AN",
+    "description": "TILEDATA_FLAG_PREFIX_AN constant"
+  },
+  "TILEDATA_FLAG_INTERNAL": {
+    "prefix": "TILEDATA_FLAG_INTERNAL",
+    "body": "TILEDATA_FLAG_INTERNAL",
+    "description": "TILEDATA_FLAG_INTERNAL constant"
+  },
+  "TILEDATA_FLAG_FOLIAGE": {
+    "prefix": "TILEDATA_FLAG_FOLIAGE",
+    "body": "TILEDATA_FLAG_FOLIAGE",
+    "description": "TILEDATA_FLAG_FOLIAGE constant"
+  },
+  "TILEDATA_FLAG_PARTIAL_HUE": {
+    "prefix": "TILEDATA_FLAG_PARTIAL_HUE",
+    "body": "TILEDATA_FLAG_PARTIAL_HUE",
+    "description": "TILEDATA_FLAG_PARTIAL_HUE constant"
+  },
+  "TILEDATA_FLAG_UNK1": {
+    "prefix": "TILEDATA_FLAG_UNK1",
+    "body": "TILEDATA_FLAG_UNK1",
+    "description": "TILEDATA_FLAG_UNK1 constant"
+  },
+  "TILEDATA_FLAG_MAP": {
+    "prefix": "TILEDATA_FLAG_MAP",
+    "body": "TILEDATA_FLAG_MAP",
+    "description": "TILEDATA_FLAG_MAP constant"
+  },
+  "TILEDATA_FLAG_CONTAINER": {
+    "prefix": "TILEDATA_FLAG_CONTAINER",
+    "body": "TILEDATA_FLAG_CONTAINER",
+    "description": "TILEDATA_FLAG_CONTAINER constant"
+  },
+  "TILEDATA_FLAG_WEARABLE": {
+    "prefix": "TILEDATA_FLAG_WEARABLE",
+    "body": "TILEDATA_FLAG_WEARABLE",
+    "description": "TILEDATA_FLAG_WEARABLE constant"
+  },
+  "TILEDATA_FLAG_LIGHTSOURCE": {
+    "prefix": "TILEDATA_FLAG_LIGHTSOURCE",
+    "body": "TILEDATA_FLAG_LIGHTSOURCE",
+    "description": "TILEDATA_FLAG_LIGHTSOURCE constant"
+  },
+  "TILEDATA_FLAG_ANIMATED": {
+    "prefix": "TILEDATA_FLAG_ANIMATED",
+    "body": "TILEDATA_FLAG_ANIMATED",
+    "description": "TILEDATA_FLAG_ANIMATED constant"
+  },
+  "TILEDATA_FLAG_HOVEROVER": {
+    "prefix": "TILEDATA_FLAG_HOVEROVER",
+    "body": "TILEDATA_FLAG_HOVEROVER",
+    "description": "TILEDATA_FLAG_HOVEROVER constant"
+  },
+  "TILEDATA_FLAG_UNK2": {
+    "prefix": "TILEDATA_FLAG_UNK2",
+    "body": "TILEDATA_FLAG_UNK2",
+    "description": "TILEDATA_FLAG_UNK2 constant"
+  },
+  "TILEDATA_FLAG_ARMOR": {
+    "prefix": "TILEDATA_FLAG_ARMOR",
+    "body": "TILEDATA_FLAG_ARMOR",
+    "description": "TILEDATA_FLAG_ARMOR constant"
+  },
+  "TILEDATA_FLAG_ROOF": {
+    "prefix": "TILEDATA_FLAG_ROOF",
+    "body": "TILEDATA_FLAG_ROOF",
+    "description": "TILEDATA_FLAG_ROOF constant"
+  },
+  "TILEDATA_FLAG_DOOR": {
+    "prefix": "TILEDATA_FLAG_DOOR",
+    "body": "TILEDATA_FLAG_DOOR",
+    "description": "TILEDATA_FLAG_DOOR constant"
+  },
+  "TILEDATA_FLAG_STAIRBACK": {
+    "prefix": "TILEDATA_FLAG_STAIRBACK",
+    "body": "TILEDATA_FLAG_STAIRBACK",
+    "description": "TILEDATA_FLAG_STAIRBACK constant"
+  },
+  "TILEDATA_FLAG_STAIRRIGHT": {
+    "prefix": "TILEDATA_FLAG_STAIRRIGHT",
+    "body": "TILEDATA_FLAG_STAIRRIGHT",
+    "description": "TILEDATA_FLAG_STAIRRIGHT constant"
+  },
+  "MAPDATA_FLAG_NONE": {
+    "prefix": "MAPDATA_FLAG_NONE",
+    "body": "MAPDATA_FLAG_NONE",
+    "description": "MAPDATA_FLAG_NONE constant"
+  },
+  "MAPDATA_FLAG_MOVELAND": {
+    "prefix": "MAPDATA_FLAG_MOVELAND",
+    "body": "MAPDATA_FLAG_MOVELAND",
+    "description": "MAPDATA_FLAG_MOVELAND constant"
+  },
+  "MAPDATA_FLAG_MOVESEA": {
+    "prefix": "MAPDATA_FLAG_MOVESEA",
+    "body": "MAPDATA_FLAG_MOVESEA",
+    "description": "MAPDATA_FLAG_MOVESEA constant"
+  },
+  "MAPDATA_FLAG_BLOCKSIGHT": {
+    "prefix": "MAPDATA_FLAG_BLOCKSIGHT",
+    "body": "MAPDATA_FLAG_BLOCKSIGHT",
+    "description": "MAPDATA_FLAG_BLOCKSIGHT constant"
+  },
+  "MAPDATA_FLAG_OVERFLIGHT": {
+    "prefix": "MAPDATA_FLAG_OVERFLIGHT",
+    "body": "MAPDATA_FLAG_OVERFLIGHT",
+    "description": "MAPDATA_FLAG_OVERFLIGHT constant"
+  },
+  "MAPDATA_FLAG_ALLOWDROPON": {
+    "prefix": "MAPDATA_FLAG_ALLOWDROPON",
+    "body": "MAPDATA_FLAG_ALLOWDROPON",
+    "description": "MAPDATA_FLAG_ALLOWDROPON constant"
+  },
+  "MAPDATA_FLAG_GRADUAL": {
+    "prefix": "MAPDATA_FLAG_GRADUAL",
+    "body": "MAPDATA_FLAG_GRADUAL",
+    "description": "MAPDATA_FLAG_GRADUAL constant"
+  },
+  "MAPDATA_FLAG_BLOCKING": {
+    "prefix": "MAPDATA_FLAG_BLOCKING",
+    "body": "MAPDATA_FLAG_BLOCKING",
+    "description": "MAPDATA_FLAG_BLOCKING constant"
+  },
+  "MAPDATA_FLAG_MORE_SOLIDS": {
+    "prefix": "MAPDATA_FLAG_MORE_SOLIDS",
+    "body": "MAPDATA_FLAG_MORE_SOLIDS",
+    "description": "MAPDATA_FLAG_MORE_SOLIDS constant"
+  },
+  "MAPDATA_FLAG_WALKBLOCK": {
+    "prefix": "MAPDATA_FLAG_WALKBLOCK",
+    "body": "MAPDATA_FLAG_WALKBLOCK",
+    "description": "MAPDATA_FLAG_WALKBLOCK constant"
+  },
+  "MAPDATA_FLAG_MOVE_FLAGS": {
+    "prefix": "MAPDATA_FLAG_MOVE_FLAGS",
+    "body": "MAPDATA_FLAG_MOVE_FLAGS",
+    "description": "MAPDATA_FLAG_MOVE_FLAGS constant"
+  },
+  "MAPDATA_FLAG_DROP_FLAGS": {
+    "prefix": "MAPDATA_FLAG_DROP_FLAGS",
+    "body": "MAPDATA_FLAG_DROP_FLAGS",
+    "description": "MAPDATA_FLAG_DROP_FLAGS constant"
+  },
+  "MAPDATA_FLAG_ALL": {
+    "prefix": "MAPDATA_FLAG_ALL",
+    "body": "MAPDATA_FLAG_ALL",
+    "description": "MAPDATA_FLAG_ALL constant"
+  },
+  "MOVEOBJECT_NORMAL": {
+    "prefix": "MOVEOBJECT_NORMAL",
+    "body": "MOVEOBJECT_NORMAL",
+    "description": "MOVEOBJECT_NORMAL constant"
+  },
+  "MOVEITEM_IGNOREMOVABLE": {
+    "prefix": "MOVEITEM_IGNOREMOVABLE",
+    "body": "MOVEITEM_IGNOREMOVABLE",
+    "description": "MOVEITEM_IGNOREMOVABLE constant"
+  },
+  "MOVEOBJECT_FORCELOCATION": {
+    "prefix": "MOVEOBJECT_FORCELOCATION",
+    "body": "MOVEOBJECT_FORCELOCATION",
+    "description": "MOVEOBJECT_FORCELOCATION constant"
+  },
+  "JOURNAL_PRINT_NAME": {
+    "prefix": "JOURNAL_PRINT_NAME",
+    "body": "JOURNAL_PRINT_NAME",
+    "description": "JOURNAL_PRINT_NAME constant"
+  },
+  "JOURNAL_PRINT_YOU_SEE": {
+    "prefix": "JOURNAL_PRINT_YOU_SEE",
+    "body": "JOURNAL_PRINT_YOU_SEE",
+    "description": "JOURNAL_PRINT_YOU_SEE constant"
+  },
+  "RESURRECT_FORCELOCATION": {
+    "prefix": "RESURRECT_FORCELOCATION",
+    "body": "RESURRECT_FORCELOCATION",
+    "description": "RESURRECT_FORCELOCATION constant"
+  },
+  "MOVETYPE_PLAYER": {
+    "prefix": "MOVETYPE_PLAYER",
+    "body": "MOVETYPE_PLAYER",
+    "description": "MOVETYPE_PLAYER constant"
+  },
+  "MOVETYPE_COREMOVE": {
+    "prefix": "MOVETYPE_COREMOVE",
+    "body": "MOVETYPE_COREMOVE",
+    "description": "MOVETYPE_COREMOVE constant"
+  },
+  "MOVETYPE_CORECREATE": {
+    "prefix": "MOVETYPE_CORECREATE",
+    "body": "MOVETYPE_CORECREATE",
+    "description": "MOVETYPE_CORECREATE constant"
+  },
+  "INSERT_ADD_ITEM": {
+    "prefix": "INSERT_ADD_ITEM",
+    "body": "INSERT_ADD_ITEM",
+    "description": "INSERT_ADD_ITEM constant"
+  },
+  "INSERT_INCREASE_STACK": {
+    "prefix": "INSERT_INCREASE_STACK",
+    "body": "INSERT_INCREASE_STACK",
+    "description": "INSERT_INCREASE_STACK constant"
+  },
+  "DELETE_BY_PLAYER": {
+    "prefix": "DELETE_BY_PLAYER",
+    "body": "DELETE_BY_PLAYER",
+    "description": "DELETE_BY_PLAYER constant"
+  },
+  "DELETE_BY_SCRIPT": {
+    "prefix": "DELETE_BY_SCRIPT",
+    "body": "DELETE_BY_SCRIPT",
+    "description": "DELETE_BY_SCRIPT constant"
+  },
+  "ENUMERATE_IGNORE_LOCKED": {
+    "prefix": "ENUMERATE_IGNORE_LOCKED",
+    "body": "ENUMERATE_IGNORE_LOCKED",
+    "description": "ENUMERATE_IGNORE_LOCKED constant"
+  },
+  "ENUMERATE_ROOT_ONLY": {
+    "prefix": "ENUMERATE_ROOT_ONLY",
+    "body": "ENUMERATE_ROOT_ONLY",
+    "description": "ENUMERATE_ROOT_ONLY constant"
+  },
+  "FINDSUBSTANCE_IGNORE_LOCKED": {
+    "prefix": "FINDSUBSTANCE_IGNORE_LOCKED",
+    "body": "FINDSUBSTANCE_IGNORE_LOCKED",
+    "description": "FINDSUBSTANCE_IGNORE_LOCKED constant"
+  },
+  "FINDSUBSTANCE_ROOT_ONLY": {
+    "prefix": "FINDSUBSTANCE_ROOT_ONLY",
+    "body": "FINDSUBSTANCE_ROOT_ONLY",
+    "description": "FINDSUBSTANCE_ROOT_ONLY constant"
+  },
+  "FINDSUBSTANCE_FIND_ALL": {
+    "prefix": "FINDSUBSTANCE_FIND_ALL",
+    "body": "FINDSUBSTANCE_FIND_ALL",
+    "description": "FINDSUBSTANCE_FIND_ALL constant"
+  },
+  "TE_CANCEL_DISABLE": {
+    "prefix": "TE_CANCEL_DISABLE",
+    "body": "TE_CANCEL_DISABLE",
+    "description": "TE_CANCEL_DISABLE constant"
+  },
+  "TE_CANCEL_ENABLE": {
+    "prefix": "TE_CANCEL_ENABLE",
+    "body": "TE_CANCEL_ENABLE",
+    "description": "TE_CANCEL_ENABLE constant"
+  },
+  "TE_STYLE_DISABLE": {
+    "prefix": "TE_STYLE_DISABLE",
+    "body": "TE_STYLE_DISABLE",
+    "description": "TE_STYLE_DISABLE constant"
+  },
+  "TE_STYLE_NORMAL": {
+    "prefix": "TE_STYLE_NORMAL",
+    "body": "TE_STYLE_NORMAL",
+    "description": "TE_STYLE_NORMAL constant"
+  },
+  "TE_STYLE_NUMERICAL": {
+    "prefix": "TE_STYLE_NUMERICAL",
+    "body": "TE_STYLE_NUMERICAL",
+    "description": "TE_STYLE_NUMERICAL constant"
+  },
+  "SYSFIND_SEARCH_OFFLINE_MOBILES": {
+    "prefix": "SYSFIND_SEARCH_OFFLINE_MOBILES",
+    "body": "SYSFIND_SEARCH_OFFLINE_MOBILES",
+    "description": "SYSFIND_SEARCH_OFFLINE_MOBILES constant"
+  },
+  "SYSFIND_SEARCH_STORAGE_AREAS": {
+    "prefix": "SYSFIND_SEARCH_STORAGE_AREAS",
+    "body": "SYSFIND_SEARCH_STORAGE_AREAS",
+    "description": "SYSFIND_SEARCH_STORAGE_AREAS constant"
+  },
+  "TGTOPT_CHECK_LOS": {
+    "prefix": "TGTOPT_CHECK_LOS",
+    "body": "TGTOPT_CHECK_LOS",
+    "description": "TGTOPT_CHECK_LOS constant"
+  },
+  "TGTOPT_NOCHECK_LOS": {
+    "prefix": "TGTOPT_NOCHECK_LOS",
+    "body": "TGTOPT_NOCHECK_LOS",
+    "description": "TGTOPT_NOCHECK_LOS constant"
+  },
+  "TGTOPT_HARMFUL": {
+    "prefix": "TGTOPT_HARMFUL",
+    "body": "TGTOPT_HARMFUL",
+    "description": "TGTOPT_HARMFUL constant"
+  },
+  "TGTOPT_NEUTRAL": {
+    "prefix": "TGTOPT_NEUTRAL",
+    "body": "TGTOPT_NEUTRAL",
+    "description": "TGTOPT_NEUTRAL constant"
+  },
+  "TGTOPT_HELPFUL": {
+    "prefix": "TGTOPT_HELPFUL",
+    "body": "TGTOPT_HELPFUL",
+    "description": "TGTOPT_HELPFUL constant"
+  },
+  "POLCLASS_UOBJECT": {
+    "prefix": "POLCLASS_UOBJECT",
+    "body": "POLCLASS_UOBJECT",
+    "description": "POLCLASS_UOBJECT constant"
+  },
+  "POLCLASS_ITEM": {
+    "prefix": "POLCLASS_ITEM",
+    "body": "POLCLASS_ITEM",
+    "description": "POLCLASS_ITEM constant"
+  },
+  "POLCLASS_MOBILE": {
+    "prefix": "POLCLASS_MOBILE",
+    "body": "POLCLASS_MOBILE",
+    "description": "POLCLASS_MOBILE constant"
+  },
+  "POLCLASS_NPC": {
+    "prefix": "POLCLASS_NPC",
+    "body": "POLCLASS_NPC",
+    "description": "POLCLASS_NPC constant"
+  },
+  "POLCLASS_LOCKABLE": {
+    "prefix": "POLCLASS_LOCKABLE",
+    "body": "POLCLASS_LOCKABLE",
+    "description": "POLCLASS_LOCKABLE constant"
+  },
+  "POLCLASS_CONTAINER": {
+    "prefix": "POLCLASS_CONTAINER",
+    "body": "POLCLASS_CONTAINER",
+    "description": "POLCLASS_CONTAINER constant"
+  },
+  "POLCLASS_CORPSE": {
+    "prefix": "POLCLASS_CORPSE",
+    "body": "POLCLASS_CORPSE",
+    "description": "POLCLASS_CORPSE constant"
+  },
+  "POLCLASS_DOOR": {
+    "prefix": "POLCLASS_DOOR",
+    "body": "POLCLASS_DOOR",
+    "description": "POLCLASS_DOOR constant"
+  },
+  "POLCLASS_SPELLBOOK": {
+    "prefix": "POLCLASS_SPELLBOOK",
+    "body": "POLCLASS_SPELLBOOK",
+    "description": "POLCLASS_SPELLBOOK constant"
+  },
+  "POLCLASS_MAP": {
+    "prefix": "POLCLASS_MAP",
+    "body": "POLCLASS_MAP",
+    "description": "POLCLASS_MAP constant"
+  },
+  "POLCLASS_MULTI": {
+    "prefix": "POLCLASS_MULTI",
+    "body": "POLCLASS_MULTI",
+    "description": "POLCLASS_MULTI constant"
+  },
+  "POLCLASS_BOAT": {
+    "prefix": "POLCLASS_BOAT",
+    "body": "POLCLASS_BOAT",
+    "description": "POLCLASS_BOAT constant"
+  },
+  "POLCLASS_HOUSE": {
+    "prefix": "POLCLASS_HOUSE",
+    "body": "POLCLASS_HOUSE",
+    "description": "POLCLASS_HOUSE constant"
+  },
+  "POLCLASS_EQUIPMENT": {
+    "prefix": "POLCLASS_EQUIPMENT",
+    "body": "POLCLASS_EQUIPMENT",
+    "description": "POLCLASS_EQUIPMENT constant"
+  },
+  "POLCLASS_ARMOR": {
+    "prefix": "POLCLASS_ARMOR",
+    "body": "POLCLASS_ARMOR",
+    "description": "POLCLASS_ARMOR constant"
+  },
+  "POLCLASS_WEAPON": {
+    "prefix": "POLCLASS_WEAPON",
+    "body": "POLCLASS_WEAPON",
+    "description": "POLCLASS_WEAPON constant"
+  },
+  "RACE_HUMAN": {
+    "prefix": "RACE_HUMAN",
+    "body": "RACE_HUMAN",
+    "description": "RACE_HUMAN constant"
+  },
+  "RACE_ELF": {
+    "prefix": "RACE_ELF",
+    "body": "RACE_ELF",
+    "description": "RACE_ELF constant"
+  },
+  "RACE_GARGOYLE": {
+    "prefix": "RACE_GARGOYLE",
+    "body": "RACE_GARGOYLE",
+    "description": "RACE_GARGOYLE constant"
+  },
+  "_DEFAULT_TEXT_FONT": {
+    "prefix": "_DEFAULT_TEXT_FONT",
+    "body": "_DEFAULT_TEXT_FONT",
+    "description": "_DEFAULT_TEXT_FONT constant"
+  },
+  "_DEFAULT_TEXT_COLOR": {
+    "prefix": "_DEFAULT_TEXT_COLOR",
+    "body": "_DEFAULT_TEXT_COLOR",
+    "description": "_DEFAULT_TEXT_COLOR constant"
+  },
+  "_DEFAULT_TEXT_REQUIREDCMD": {
+    "prefix": "_DEFAULT_TEXT_REQUIREDCMD",
+    "body": "_DEFAULT_TEXT_REQUIREDCMD",
+    "description": "_DEFAULT_TEXT_REQUIREDCMD constant"
+  },
+  "_DEFAULT_REALM": {
+    "prefix": "_DEFAULT_REALM",
+    "body": "_DEFAULT_REALM",
+    "description": "_DEFAULT_REALM constant"
+  },
+  "REALM_BRITANNIA": {
+    "prefix": "REALM_BRITANNIA",
+    "body": "REALM_BRITANNIA",
+    "description": "REALM_BRITANNIA constant"
+  },
+  "REALM_BRITANNIA_ALT": {
+    "prefix": "REALM_BRITANNIA_ALT",
+    "body": "REALM_BRITANNIA_ALT",
+    "description": "REALM_BRITANNIA_ALT constant"
+  },
+  "REALM_ILSHENAR": {
+    "prefix": "REALM_ILSHENAR",
+    "body": "REALM_ILSHENAR",
+    "description": "REALM_ILSHENAR constant"
+  },
+  "REALM_MALAS": {
+    "prefix": "REALM_MALAS",
+    "body": "REALM_MALAS",
+    "description": "REALM_MALAS constant"
+  },
+  "REALM_TOKUNO": {
+    "prefix": "REALM_TOKUNO",
+    "body": "REALM_TOKUNO",
+    "description": "REALM_TOKUNO constant"
+  },
+  "REALM_TERMUR": {
+    "prefix": "REALM_TERMUR",
+    "body": "REALM_TERMUR",
+    "description": "REALM_TERMUR constant"
+  },
+  "ACTION_DIR_FORWARD": {
+    "prefix": "ACTION_DIR_FORWARD",
+    "body": "ACTION_DIR_FORWARD",
+    "description": "ACTION_DIR_FORWARD constant"
+  },
+  "ACTION_DIR_BACKWARD": {
+    "prefix": "ACTION_DIR_BACKWARD",
+    "body": "ACTION_DIR_BACKWARD",
+    "description": "ACTION_DIR_BACKWARD constant"
+  },
+  "ACTION_NOREPEAT": {
+    "prefix": "ACTION_NOREPEAT",
+    "body": "ACTION_NOREPEAT",
+    "description": "ACTION_NOREPEAT constant"
+  },
+  "ACTION_REPEAT": {
+    "prefix": "ACTION_REPEAT",
+    "body": "ACTION_REPEAT",
+    "description": "ACTION_REPEAT constant"
+  },
+  "CANWALK_DIR": {
+    "prefix": "CANWALK_DIR",
+    "body": "CANWALK_DIR",
+    "description": "CANWALK_DIR constant"
+  },
+  "UPDATEMOBILE_RECREATE": {
+    "prefix": "UPDATEMOBILE_RECREATE",
+    "body": "UPDATEMOBILE_RECREATE",
+    "description": "UPDATEMOBILE_RECREATE constant"
+  },
+  "UPDATEMOBILE_UPDATE": {
+    "prefix": "UPDATEMOBILE_UPDATE",
+    "body": "UPDATEMOBILE_UPDATE",
+    "description": "UPDATEMOBILE_UPDATE constant"
+  },
+  "CLOSE_PAPERDOLL": {
+    "prefix": "CLOSE_PAPERDOLL",
+    "body": "CLOSE_PAPERDOLL",
+    "description": "CLOSE_PAPERDOLL constant"
+  },
+  "CLOSE_STATUS": {
+    "prefix": "CLOSE_STATUS",
+    "body": "CLOSE_STATUS",
+    "description": "CLOSE_STATUS constant"
+  },
+  "CLOSE_PROFILE": {
+    "prefix": "CLOSE_PROFILE",
+    "body": "CLOSE_PROFILE",
+    "description": "CLOSE_PROFILE constant"
+  },
+  "CLOSE_CONTAINER": {
+    "prefix": "CLOSE_CONTAINER",
+    "body": "CLOSE_CONTAINER",
+    "description": "CLOSE_CONTAINER constant"
+  },
+  "CHARPROFILE_NO_UNEDITABLE_TEXT": {
+    "prefix": "CHARPROFILE_NO_UNEDITABLE_TEXT",
+    "body": "CHARPROFILE_NO_UNEDITABLE_TEXT",
+    "description": "CHARPROFILE_NO_UNEDITABLE_TEXT constant"
+  },
+  "CHARPROFILE_NO_EDITABLE_TEXT": {
+    "prefix": "CHARPROFILE_NO_EDITABLE_TEXT",
+    "body": "CHARPROFILE_NO_EDITABLE_TEXT",
+    "description": "CHARPROFILE_NO_EDITABLE_TEXT constant"
+  },
+  "LOG_DATETIME": {
+    "prefix": "LOG_DATETIME",
+    "body": "LOG_DATETIME",
+    "description": "LOG_DATETIME constant"
+  },
+  "OPENMODE_IN": {
+    "prefix": "OPENMODE_IN",
+    "body": "OPENMODE_IN",
+    "description": "OPENMODE_IN constant"
+  },
+  "OPENMODE_OUT": {
+    "prefix": "OPENMODE_OUT",
+    "body": "OPENMODE_OUT",
+    "description": "OPENMODE_OUT constant"
+  },
+  "OPENMODE_ATE": {
+    "prefix": "OPENMODE_ATE",
+    "body": "OPENMODE_ATE",
+    "description": "OPENMODE_ATE constant"
+  },
+  "OPENMODE_APP": {
+    "prefix": "OPENMODE_APP",
+    "body": "OPENMODE_APP",
+    "description": "OPENMODE_APP constant"
+  },
+  "OPENMODE_TRUNC": {
+    "prefix": "OPENMODE_TRUNC",
+    "body": "OPENMODE_TRUNC",
+    "description": "OPENMODE_TRUNC constant"
+  },
+  "SEEKDIR_BEG": {
+    "prefix": "SEEKDIR_BEG",
+    "body": "SEEKDIR_BEG",
+    "description": "SEEKDIR_BEG constant"
+  },
+  "SEEKDIR_CUR": {
+    "prefix": "SEEKDIR_CUR",
+    "body": "SEEKDIR_CUR",
+    "description": "SEEKDIR_CUR constant"
+  },
+  "SEEKDIR_END": {
+    "prefix": "SEEKDIR_END",
+    "body": "SEEKDIR_END",
+    "description": "SEEKDIR_END constant"
+  },
+  "LITTLE_ENDIAN": {
+    "prefix": "LITTLE_ENDIAN",
+    "body": "LITTLE_ENDIAN",
+    "description": "LITTLE_ENDIAN constant"
+  },
+  "BIG_ENDIAN": {
+    "prefix": "BIG_ENDIAN",
+    "body": "BIG_ENDIAN",
+    "description": "BIG_ENDIAN constant"
+  },
+  "LISTDIR_LIST_DIRS": {
+    "prefix": "LISTDIR_LIST_DIRS",
+    "body": "LISTDIR_LIST_DIRS",
+    "description": "LISTDIR_LIST_DIRS constant"
+  },
+  "LISTDIR_DONT_LIST_DIRS": {
+    "prefix": "LISTDIR_DONT_LIST_DIRS",
+    "body": "LISTDIR_DONT_LIST_DIRS",
+    "description": "LISTDIR_DONT_LIST_DIRS constant"
+  },
+  "LISTDIR_NO_FILES": {
+    "prefix": "LISTDIR_NO_FILES",
+    "body": "LISTDIR_NO_FILES",
+    "description": "LISTDIR_NO_FILES constant"
+  },
+  "LISTDIR_ALL_FILES": {
+    "prefix": "LISTDIR_ALL_FILES",
+    "body": "LISTDIR_ALL_FILES",
+    "description": "LISTDIR_ALL_FILES constant"
+  },
+  "BOAT_SPEED_ONE_TILE": {
+    "prefix": "BOAT_SPEED_ONE_TILE",
+    "body": "BOAT_SPEED_ONE_TILE",
+    "description": "BOAT_SPEED_ONE_TILE constant"
+  },
+  "BOAT_SPEED_SLOW": {
+    "prefix": "BOAT_SPEED_SLOW",
+    "body": "BOAT_SPEED_SLOW",
+    "description": "BOAT_SPEED_SLOW constant"
+  },
+  "BOAT_SPEED_MEDIUM": {
+    "prefix": "BOAT_SPEED_MEDIUM",
+    "body": "BOAT_SPEED_MEDIUM",
+    "description": "BOAT_SPEED_MEDIUM constant"
+  },
+  "BOAT_SPEED_FAST": {
+    "prefix": "BOAT_SPEED_FAST",
+    "body": "BOAT_SPEED_FAST",
+    "description": "BOAT_SPEED_FAST constant"
+  }
+}

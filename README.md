@@ -1,32 +1,43 @@
-# Polscript README
-This is a hightlight colorizer for polscript, to be used in Visual Code.<br> 
-It's based on PHP language, and itsn't done yet. But is better than nothing.<br>
-Please, be aware that this colorizer works better with some themes. In this screenshot, I've used the theme `Dark+ (default dark)`.
-Others that i've already tested was `Monokai Dark Soda` and `Darktooth`
+# Polscript Extension for Visual Studio Code
 
-![highlight example](https://github.com/vitorfdl/polscript-vscode/raw/master/example.png) ![highlight example](https://github.com/vitorfdl/polscript-vscode/raw/master/examplecfg.png)
+The Polscript extension provides syntax highlighting for the Polscript language within Visual Studio Code. It's an actively developed extension that's both functional and designed to enhance your programming experience.
 
-### Install the extention
-* You can install by typing `ext install polscript` in vscode (easy way)
+For the best results, we recommend using specific themes that complement the syntax highlighting provided by this extension. Below are examples of the Polscript extension used with the `Dark+ (default dark)` theme. Compatibility and visual appeal have also been confirmed with themes such as `Monokai Dark Soda` and `Darktooth`.
 
-## For Dev Contribution
-Please, contribute if you can! Any help counts ! =] 
+![Polscript syntax with Dark+ theme](https://github.com/vitorfdl/polscript-vscode/raw/master/example.png) 
+![Polscript syntax with Darktooth theme](https://github.com/vitorfdl/polscript-vscode/raw/master/examplecfg.png)
 
-### Install the extention
-* You can clone this repository to your folder <user home>/.vscode/extensions and restart code.
+## Release Notes
 
-### What's in the folder
-* This folder contains all of the files necessary for your extension
-* `package.json` - this is the manifest file in which you declare your language support and define
-the location of the grammar file that has been copied into you extension.
-* `syntaxes/polscript.tmLanguage` - this is the Text mate grammar file that is used for tokenization
-* `polscript.configuration.json` - this the language configuration, defining the tokens that are used for
-comments and brackets.
+### Versions 3.0.0 & 3.0.1
+- Overhauled syntax highlighting to align with industry best practices, courtesy of insights from GPT-4.
+- Enhanced .cfg file recognition.
+- Refined highlighting for Arrays, Structs, and Dictionaries for better readability.
 
-### Make changes
-* you can relaunch the extension from the debug toolbar after making changes to the files listed above
-* you can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes
+## Getting Started
 
-### Add more language features
-* To add features such as intellisense, hovers and validators check out the VS Code extenders documentation at
-https://code.visualstudio.com/docs
+### Quick Install
+Execute `ext install polscript` within the command palette (`Ctrl+P`) to install quickly.
+
+## Get Involved
+Your contributions are highly appreciated! We welcome contributions of all forms and sizes. 
+
+### Manual Setup
+For manual installation:
+1. Clone the repository into your `<user home>/.vscode/extensions` directory.
+2. Restart Visual Studio Code to activate the extension.
+
+### Repository Structure
+The repository is organized as follows:
+- `package.json` - Declares language support and specifies the grammar file location.
+- `syntaxes/polscript.tmLanguage` - The TextMate grammar file responsible for tokenization.
+- `polscript.configuration.json` - Contains language configurations for tokens related to comments and brackets.
+
+### Developing
+To contribute changes:
+1. Make your modifications to the files mentioned above.
+2. Launch the extension using the debug toolbar in Visual Studio Code to test your changes.
+3. To apply and review your changes, reload the Visual Studio Code window with the extension (`Ctrl+R` or `Cmd+R` for Mac).
+
+### Enhancing Language Features
+For adding advanced language features like IntelliSense, hover information, or validators, please consult the [VS Code Extension API documentation](https://code.visualstudio.com/docs).
